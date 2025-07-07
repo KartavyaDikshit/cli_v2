@@ -1,0 +1,72 @@
+
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Lint
+        run: npm run lint
+
+      - name: Run Type-check
+        run: npm run typecheck
+
+      - name: Run Unit Tests
+        run: npm test
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Start Next.js dev server
+        run: npm run dev &
+
+      - name: Run E2E Tests
+        run: npx playwright test
+
+  lighthouse-audit:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli
+
+      - name: Build Next.js project
+        run: npm run build
+
+      - name: Start Next.js production server
+        run: npm run start &
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
