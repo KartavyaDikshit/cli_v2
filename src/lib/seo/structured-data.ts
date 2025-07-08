@@ -32,6 +32,18 @@ interface Article {
   };
 }
 
+interface Report {
+  '@type': 'Report';
+  headline: string;
+  author: {
+    '@type': 'Person' | 'Organization';
+    name: string;
+  };
+  datePublished: string;
+  description: string;
+  url: string;
+}
+
 export const generateOrganizationSchema = (
   name: string,
   url: string,
@@ -78,4 +90,23 @@ export const generateArticleSchema = (
     '@type': 'WebPage',
     '@id': articleUrl,
   },
+});
+
+export const generateReportSchema = (
+  headline: string,
+  authorName: string,
+  datePublished: string,
+  description: string,
+  url: string,
+  authorType: 'Person' | 'Organization' = 'Person'
+): Report => ({
+  '@type': 'Report',
+  headline,
+  author: {
+    '@type': authorType,
+    name: authorName,
+  },
+  datePublished,
+  description,
+  url,
 });

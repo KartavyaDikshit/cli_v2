@@ -1,0 +1,9 @@
+{
+  "reportsIndexTitle": "Marktforschungsberichte",
+  "reportsIndexDescription": "Entdecken Sie unsere umfassenden Marktforschungsberichte zu verschiedenen Branchen und Trends.",
+  "report1Title": "Globale Markttrends",
+  "report2Title": "KI im Gesundheitswesen",
+  "report3Title": "Zukunft des E-Commerce",
+  "reportDetailTitle": "Marktforschungsbericht: {slug}",
+  "reportDetailContent": "Dies ist der detaillierte Inhalt des Marktforschungsberichts zu {slug}."
+}

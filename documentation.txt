@@ -1,0 +1,2030 @@
+✦ Okay, I will conduct a comprehensive codebase audit and generate a report based on your requirements. This will involve
+  scanning the entire directory, analyzing key files, and assessing the current state against your strategic goals.
+
+
+  Due to the extensive nature of this request, I will perform the analysis in several steps, focusing on one section of
+  the report at a time.
+
+
+  Let's start with 1. CODEBASE INVENTORY & STRUCTURE ANALYSIS. I will list all files and directories recursively, and
+  then read the main configuration files.
+ ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  ReadFolder .                                                                                                         │
+ │                                                                                                                         │
+ │    Listed 23 item(s). (3 git-ignored)                                                                                   │
+ │ ✔  ReadManyFiles Will attempt to read and concatenate files using patterns: `package.json`, `next.config.mjs`, `tscon…  │
+ │                                                                                                                         │
+ │    ### ReadManyFiles Result (Target Dir: `C:\Users\User\cli_v2`)                                                        │
+ │                                                                                                                         │
+ │    Successfully read and concatenated content from **9 file(s)**.                                                       │
+ │                                                                                                                         │
+ │    **Processed Files:**                                                                                                 │
+ │    - `README.md`                                                                                                        │
+ │    - `Strategic Roadmap for Next.txt`                                                                                   │
+ │    - `content-brief-global-market-research-trends.md`                                                                   │
+ │    - `content-brief-template.md`                                                                                        │
+ │    - `master_prompt.md`                                                                                                 │
+ │    - `next.config.mjs`                                                                                                  │
+ │    - `package.json`                                                                                                     │
+ │    - `roadmap.md`                                                                                                       │
+ │    - `tsconfig.json`                                                                                                    │
+ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ --- content-brief-global-market-research-trends.md ---
+
+
+  Content Brief: global market research trends
+
+
+  Primary User Intent:
+  Users searching for "global market research trends" are likely seeking to understand the current and emerging
+  patterns, methodologies, and technologies shaping the market research industry worldwide. They want to identify key
+  drivers, challenges, and opportunities to inform their business strategies, investments, or academic research. They
+  may be looking for insights into data collection, analysis, ethical considerations, and the impact of technology on
+  market research.
+
+
+  Suggested H2/H3 Structure:
+
+
+  H2: Introduction to Global Market Research Trends
+   * H3: What are the current global market research trends?
+   * H3: Why is understanding these trends important for businesses?
+
+
+  H2: Key Aspects and Drivers of Modern Market Research
+   * H3: The Rise of AI and Automation in Data Analysis
+   * H3: The Growing Importance of Ethical Data Collection and Privacy (e.g., GDPR, CCPA)
+   * H3: The Shift Towards Agile and Real-time Research Methodologies
+   * H3: The Impact of Big Data and Advanced Analytics
+   * H3: The Role of Qualitative Research in a Quantitative World
+
+
+  H2: How to Adapt to Evolving Market Research Landscapes
+   * H3: Implementing New Technologies for Data Collection and Insights
+   * H3: Developing Robust Data Privacy and Security Protocols
+   * H3: Fostering a Culture of Continuous Learning and Adaptation
+   * H3: Leveraging Hybrid Research Approaches
+
+
+  H2: Benefits of Staying Ahead in Market Research
+   * H3: Enhanced Business Decision-Making and Strategic Planning
+   * H3: Improved Customer Understanding and Engagement
+   * H3: Competitive Advantage and Innovation
+   * H3: Optimized Resource Allocation
+
+
+  H2: Conclusion
+   * H3: Summary of key takeaways for navigating global market research trends
+   * H3: Future outlook for the market research industry
+
+
+  Relevant FAQ Questions:
+   1. What are the most significant global market research trends impacting businesses today?
+   2. How is artificial intelligence transforming market research methodologies?
+   3. What are the key ethical considerations in global market research?
+   4. How can businesses effectively integrate new market research technologies?
+   5. What role does qualitative research play in understanding global consumer behavior?
+
+
+  --- content-brief-template.md ---
+
+  Content Brief: {keyword}
+
+
+  Primary User Intent:
+  [Describe the primary goal or intent of a user searching for this keyword. What information are they seeking? What
+  problem are they trying to solve?]
+
+  Suggested H2/H3 Structure:
+
+  H2: Introduction to {keyword}
+   * H3: What is {keyword}?
+   * H3: Why is {keyword} important?
+
+
+  H2: Key Aspects/Components of {keyword}
+   * H3: [Sub-topic 1 related to keyword]
+   * H3: [Sub-topic 2 related to keyword]
+   * H3: [Sub-topic 3 related to keyword]
+
+
+  H2: How to [Action related to keyword]
+   * H3: Step-by-step guide for [Action 1]
+   * H3: Best practices for [Action 2]
+
+  H2: Benefits of [Keyword/Solution]
+   * H3: Benefit 1
+   * H3: Benefit 2
+
+
+  H2: Conclusion
+   * H3: Summary of key takeaways
+   * H3: Future outlook/Call to action
+
+
+  Relevant FAQ Questions:
+   1. [FAQ Question 1 related to keyword]?
+   2. [FAQ Question 2 related to keyword]?
+   3. [FAQ Question 3 related to keyword]?
+   4. [FAQ Question 4 related to keyword]?
+   5. [FAQ Question 5 related to keyword]?
+
+
+  --- master_prompt.md ---
+
+  AI Role: You are an expert full-stack developer and SEO specialist.
+
+
+  Project Context:
+  We are executing a complete rebuild of two websites, fiormarkets.com and thebrainyinsights.com, based on the attached
+  strategic roadmap [1]. The goal is to create a new, high-performance, scalable, and future-proof codebase from
+  scratch. The new platform must have a robust, SEO-first architecture and comprehensive multilingual support for
+  Japanese, Chinese, French, German, and Korean [1]. The project will use Next.js 13+ with the App Router, TypeScript,
+  and Tailwind CSS. The competitive benchmark for performance and multilingual implementation is mordorintelligence.com
+  [1].
+
+
+  Primary Objective:
+  Your task is to provide file-level code, configuration details, command-line instructions, and validation steps for
+  each phase of the project roadmap. Ensure all outputs adhere to modern best practices for web development,
+  performance optimization (Core Web Vitals), and international SEO [1][6].
+
+
+  Core Principles to Uphold:
+   1. Performance-First: All code and architecture must prioritize Core Web Vitals [1].
+   2. SEO-First: Technical SEO elements (semantic HTML, crawlability, indexability, schema markup) must be integrated at
+      the foundational level [1][5].
+   3. Scalable Multilingualism: Implement a subdirectory URL structure (/jp/, /de/, etc.) and correct hreflang tags for
+      all supported languages [1].
+   4. Maintainability: Code should be modular, well-documented, and easy to maintain to prevent future technical debt [1].
+   5. Test-Driven: Generate corresponding unit, end-to-end, and performance tests for all features.
+
+  Execution Plan:
+  Respond to my requests phase-by-phase. I will prompt you for specific files and configurations as we move through the
+  development lifecycle outlined in the roadmap.
+
+
+
+  --- next.config.mjs ---
+
+
+  /** @type {import('next').NextConfig} */
+  const nextConfig = {
+    images: {
+      domains: ['cdn.contentful.com', 'images.ctfassets.net'],
+      formats: ['image/webp', 'image/avif'],
+    },
+    poweredByHeader: false,
+    compress: true,
+  };
+
+  export default nextConfig;
+
+  --- package.json ---
+
+
+  {
+    "name": "cli_v2",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@next/third-parties": "^15.3.5",
+      "@playwright/test": "^1.53.2",
+      "@testing-library/jest-dom": "^6.6.3",
+      "@testing-library/react": "^16.3.0",
+      "@vercel/analytics": "^1.5.0",
+      "cypress": "^14.5.1",
+      "jest": "^30.0.4",
+      "jest-environment-jsdom": "^30.0.4",
+      "next": "^15.3.5",
+      "next-sitemap": "^4.2.3",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+      "@eslint/eslintrc": "^3",
+      "@tailwindcss/postcss": "^4",
+      "@types/node": "^20",
+      "@types/react": "^19",
+      "@types/react-dom": "^19",
+      "eslint": "^9",
+      "eslint-config-next": "15.3.5",
+      "tailwindcss": "^4",
+      "typescript": "^5"
+    }
+  }
+
+
+  --- roadmap.md ---
+
+
+  Strategic Roadmap for SEO Optimization and Multilingual Expansion: fiormarkets.com & thebrainyinsights.com
+   1. Executive Summary
+  This report outlines a strategic and technical roadmap for comprehensively optimizing the websites fiormarkets.com
+  and thebrainyinsights.com for search engines and integrating robust multilingual language support. The overarching
+  objective is to establish a technically reliable, high-performing digital presence that mirrors the success observed
+  in industry leaders such as mordorintelligence.com, leveraging a new codebase built from the ground up.
+
+
+  Analysis of the current state of both fiormarkets.com and thebrainyinsights.com reveals significant foundational
+  issues. These include pervasive poor Core Web Vitals, critically low organic visibility, and fundamental structural
+  deficiencies that impede search engine crawling and user experience. These challenges collectively contribute to a
+  cycle of underperformance, limiting market reach and competitive standing.
+
+
+  The strategic recommendations presented herein advocate for an SEO-first architectural approach for the new codebase,
+  ensuring that performance, crawlability, and user experience are embedded at the core of the development process. A
+  robust multilingual implementation strategy, prioritizing technical accuracy and content localization, is also a
+  cornerstone of this plan. The execution will follow a phased approach, designed to mitigate risks and ensure stability
+   throughout the migration and expansion.
+
+
+  The anticipated outcomes of this comprehensive initiative are substantial. They include a marked improvement in
+  organic search rankings, a significant increase in qualified organic traffic, and an enhanced user experience that
+  fosters greater engagement. Crucially, the successful implementation of multilingual support will unlock global
+  market penetration, allowing fiormarkets.com and thebrainyinsights.com to effectively serve and capture audiences in
+  key international markets, including Japan, China, France, Germany, and Korea.
+
+
+   2. Current State Analysis: fiormarkets.com & thebrainyinsights.com
+  This section provides a detailed audit of the existing websites, identifying their current SEO performance, technical
+  health, and structural issues. The findings underscore the critical need for a new codebase to address deep-seated
+  problems that hinder organic growth and global reach.
+
+
+  2.1. Website Functionality & Architecture Review
+  A thorough review of fiormarkets.com reveals several critical performance and structural issues. The site exhibits
+  consistently low Core Web Vitals (CWV) scores, indicative of significant performance bottlenecks such as slow loading
+  times, poor interactivity, and visual instability. These technical deficiencies directly impair user experience and
+  are a known factor influencing search engine rankings. Concurrently, the domain demonstrates minimal organic traffic
+  and keyword rankings, suggesting a fundamental lack of search engine optimization or substantial technical barriers
+  preventing discoverability by search engines. The observed high bounce rate and low user engagement further
+  corroborate the frustrating user experience, often leading visitors to abandon the site prematurely. Additionally, the
+   design of fiormarkets.com appears outdated, which can erode user trust and complicate navigation, thereby
+  contributing to diminished engagement. The overall information architecture is unclear, making it challenging for both
+   human users and search engine crawlers to discern the relationships between pages and the site's thematic authority.
+
+
+
+  The issues identified on thebrainyinsights.com share commonalities with fiormarkets.com, while also presenting
+  distinct technical challenges. The site struggles with URL structure and canonicalization problems, which can result
+  in duplicate content issues, dilute the distribution of link equity across pages, and lead to inefficient crawling by
+  search engines. Slow page load times are also a significant concern, directly impacting Core Web Vitals and overall
+  user satisfaction. A critical omission is the absence or incorrect implementation of hreflang tags. This indicates a
+  profound lack of proper internationalization, hindering global SEO efforts and potentially causing search engines to
+  perceive different language versions as duplicate content. Furthermore, suboptimal internal linking means that the
+  value passed from one page to another (link equity) is not efficiently distributed throughout the site, and important
+  content may not be easily discoverable by either crawlers or users. The lack of structured data, or Schema Markup,
+  prevents search engines from fully understanding the content's context and displaying rich snippets in search results,
+   which can significantly reduce click-through rates (CTR).
+
+
+  The combination of poor Core Web Vitals, low organic visibility, high bounce rates, outdated design, and unclear
+  information architecture on fiormarkets.com represents more than a collection of isolated problems. Each issue
+  intensifies the others, creating a detrimental cycle. For instance, poor CWV leads to high bounce rates, which signals
+   to search engines that the content may not be valuable or the user experience is subpar. An outdated design further
+  diminishes user trust and the perceived authority of the site. An unclear architecture makes it difficult for search
+  engines to comprehend the site's topical relevance and hierarchy, thereby limiting its ability to rank for competitive
+   terms. This cumulative negative impact makes it exceedingly difficult for the site to gain authority, trust, and
+  organic traction within the competitive market research niche.
+
+
+  The recurring technical challenges observed across both fiormarkets.com and thebrainyinsights.com—including poor Core
+  Web Vitals, problematic URL structures, slow loading times, and the absence of schema markup—strongly indicate a
+  deep-seated issue of technical debt. This situation suggests that the existing codebase and development practices were
+   not built with an SEO-first approach. The decision to construct a new codebase from scratch, as requested, is
+  therefore not merely an upgrade but a critical necessity. This approach provides an opportunity to escape the cycle of
+   technical debt that actively undermines SEO performance and scalability, allowing for the embedding of SEO best
+  practices into the very foundation of the new system, rather than attempting to layer them on top later.
+
+
+  The specific identification of missing or incorrect hreflang tags on thebrainyinsights.com, coupled with the explicit
+  request for multilingual support, highlights a significant missed opportunity for global market penetration. Without
+  proper internationalization, these websites are effectively invisible to non-English speaking audiences, or, worse,
+  they risk being penalized for duplicate content across different geographical regions. This problem is particularly
+  acute given that the market research industry is inherently global, meaning the current sites are failing to capture a
+   substantial portion of their potential audience. The new codebase must prioritize a robust internationalization
+  (i18n) strategy to unlock these lucrative global markets.
+
+
+  2.2. Current SEO Performance & URL Mapping Analysis
+  The current organic performance of both fiormarkets.com and thebrainyinsights.com is significantly constrained.
+  Detailed analysis reveals low organic traffic volumes, limited keyword rankings for relevant industry terms, and
+  backlink profiles that are insufficient to compete effectively within the market research domain. This competitive
+  standing is largely a direct consequence of the underlying technical and structural issues.
+
+
+  Both domains exhibit significant URL structure and indexing challenges. Fiormarkets.com is likely experiencing
+  widespread indexing issues due to its poor Core Web Vitals and unclear information architecture, resulting in a
+  disproportionately low number of indexed pages relative to its content volume. Thebrainyinsights.com explicitly
+  suffers from URL structure and canonicalization problems. This can lead to search engines indexing multiple versions
+  of the same content, which dilutes page authority and wastes valuable crawl budget.
+
+
+  Regarding content quality and relevance, while both sites possess a base of market research reports, their current
+  content strategy appears to lack optimization for target keywords and user intent. There are likely significant gaps
+  in content coverage for high-value terms, and existing content may not be structured or presented in a manner that
+  maximizes its search engine visibility or user engagement.
+
+
+  The combination of slow page load times, poor Core Web Vitals, and URL structure/canonicalization issues creates a
+  substantial problem for crawl budget efficiency. Search engine crawlers allocate a finite amount of time and resources
+   to a website. If pages are slow to load or if there are numerous duplicate URLs, crawlers expend their budget
+  inefficiently, potentially overlooking important new content or updated pages. This means that even if the content
+  itself is valuable, it may not be discovered or ranked effectively, directly impacting organic visibility and indexing
+   rates. This inefficiency is a silent impediment for large, content-heavy websites typical of the market research
+  sector.
+
+
+  When a website displays multiple technical flaws, such as slow speed, poor user experience, or duplicate content, it
+  not only frustrates users but also transmits negative signals to search engines. These signals can result in lower
+  trust scores, making it more challenging to acquire valuable backlinks and for existing backlinks to fully transfer
+  their "link equity." If canonicalization is improperly configured, link equity can be inadvertently split between
+  multiple URLs, effectively weakening the authority of the intended canonical page. This directly impacts the domain's
+  overall authority and its capacity to rank for competitive terms, diminishing the perceived authority of the current
+  sites in the eyes of search engines.
+
+
+  2.3. Identified Strengths, Weaknesses, Opportunities, and Threats (SWOT)
+  A comprehensive SWOT analysis provides a strategic overview of the project's landscape:
+
+  Strengths:
+
+  An existing content base, even if currently unoptimized, provides a foundational asset for migration and repurposing.
+
+
+  Established domain names (fiormarkets.com, thebrainyinsights.com) carry some existing brand recognition and the
+  potential for retaining valuable link equity during the migration process.
+
+  The user's clear vision for improvement and commitment to investing in a new codebase signals a strong strategic
+  intent.
+
+  Weaknesses:
+
+  Significant technical debt and poor current SEO performance across both domains.
+
+
+  Suboptimal user experience and outdated design.
+
+  A notable lack of effective multilingual support.
+
+  Poor internal linking and an unclear information architecture.
+
+  Opportunities:
+
+
+  New Codebase Advantage: The paramount opportunity lies in the ability to construct an SEO-first, high-performance,
+  and scalable architecture from scratch, thereby circumventing existing legacy issues. This is the single most
+  significant advantage.
+
+  Multilingual Expansion: The project can tap into lucrative global markets, including Japanese, Chinese, French,
+  German, and Korean, through a properly implemented internationalization strategy.
+
+
+  Competitive Advantage: The new platform offers the potential to outperform competitors, including and beyond
+  mordorintelligence.com, by delivering a superior user experience and a robust technical foundation.
+
+  Content Repurposing/Optimization: Existing content can be leveraged by re-optimizing and restructuring it for
+  enhanced SEO performance and user engagement.
+
+
+  Schema Markup Implementation: Implementing structured data can significantly improve visibility in search results
+  through rich snippets and enhance search engine understanding of the content.
+
+  Threats:
+
+  Migration Risks: There is a significant potential for traffic loss if the migration to the new codebase is not
+  meticulously planned and executed, encompassing risks such as incorrect redirects, broken links, and indexing issues.
+
+
+  Technical Complexity of Multilingual SEO: Incorrect hreflang implementation, suboptimal URL structure choices, or
+  flawed content translation workflows can lead to duplicate content penalties or poor international rankings.
+
+  Resource Constraints: The project's success is heavily dependent on the allocation of adequate development, SEO, and
+  content resources.
+
+  Evolving Search Algorithms: The need for a flexible architecture that can adapt to future algorithm updates is
+  paramount to sustained performance.
+
+
+  While building a new codebase is a substantial undertaking, it represents a profound strategic advantage. Many
+  organizations are burdened by years of technical debt and legacy systems, which make comprehensive SEO improvements
+  both difficult and costly. By starting from scratch, the client gains the ability to implement best practices for Core
+   Web Vitals, semantic HTML, efficient rendering, and robust internationalization from day one. This is not merely
+  about rectifying existing problems; it is about constructing a future-proof platform capable of adapting to evolving
+  SEO requirements and user expectations. This approach provides a long-term competitive edge over sites that are
+  continually patching older systems. This opportunity should be framed as a strategic investment rather than solely a
+  technical necessity.
+
+
+  The SWOT analysis highlights both technical weaknesses, such as Core Web Vitals issues and URL structure problems, and
+   significant opportunities in multilingual expansion. The threat posed by incorrect hreflang implementation
+  underscores that technical internationalization is only one component of success. To truly thrive globally, the
+  technical foundation must be seamlessly integrated with a sophisticated content strategy that considers cultural
+  nuances, conducts thorough keyword research in target languages, and ensures high-quality translation and
+  localization. A technically perfect site with poorly localized content will fail to resonate, and conversely. This
+  necessitates a holistic approach to the project, extending beyond purely technical considerations, and emphasizes the
+  critical need for cross-functional team collaboration from the outset.
+
+  The following table summarizes the current audit findings for both websites:
+
+  Domain
+
+  Key SEO Metrics (Estimated)
+
+  Core Web Vitals Status
+
+  Identified Technical Issues
+
+  Design/UX Assessment
+
+  Overall SEO Health Score
+
+  fiormarkets.com
+
+  Low Traffic, Few Rankings, Limited RDs
+
+  Poor
+
+  Slow Load Times, Unclear Architecture, Poor Internal Linking, Low Indexing
+
+  Outdated, Suboptimal
+
+  Very Low
+
+  thebrainyinsights.com
+
+  Low Traffic, Few Rankings, Limited RDs
+
+  Needs Improvement
+
+  URL Structure & Canonicalization, Missing/Incorrect Hreflang, Missing Schema
+
+
+  Suboptimal
+
+  Low
+
+
+
+  Export to Sheets
+  This table provides a clear, concise snapshot of the current state of both websites, serving as a quantifiable
+  baseline against which future improvements can be measured. By centralizing the key problems, it enables stakeholders
+  to quickly grasp the severity and breadth of the issues, which is crucial for prioritizing development and SEO efforts
+   for the new codebase. The stark contrast in performance and technical health highlighted in the table provides strong
+   justification for the "new codebase from scratch" approach, demonstrating that incremental fixes would be
+  insufficient. Furthermore, it functions as an effective communication tool for both technical and non-technical
+  stakeholders, ensuring a shared understanding of the starting point and the challenges ahead.
+
+   3. Competitive Landscape & Best Practices: A Deep Dive into mordorintelligence.com
+  This section analyzes mordorintelligence.com's successful multilingual SEO implementation to derive actionable
+  strategies and benchmarks for the new codebase.
+
+
+  3.1. Analysis of Multilingual SEO Implementation & Technical Architecture
+  Mordorintelligence.com serves as a prime example of effective multilingual SEO implementation within the market
+  research industry. The site utilizes subdirectories for different language versions, such as
+  mordorintelligence.com/jp/ for Japanese content. This is a widely adopted and effective strategy for consolidating
+  domain authority under a single root domain.
+
+
+  The site correctly employs hreflang attributes within the HTML <head> section to signal language and regional
+  targeting to search engines. This practice is fundamental for preventing duplicate content issues across different
+  language versions and ensuring that the appropriate language version is served to users in their respective locales.
+  Beyond mere translation, mordorintelligence.com likely engages in comprehensive content localization, adapting
+  content to account for cultural nuances and local keyword trends. This goes beyond direct linguistic conversion to
+  ensure the content resonates with local audiences, which is essential for achieving true international SEO success.
+
+
+  Overall, mordorintelligence.com demonstrates strong technical performance and SEO health. This includes fast page
+  load times, efficient indexing, and a well-optimized underlying architecture. This robust technical foundation is a
+  prerequisite for any successful SEO strategy, especially one involving multiple languages and global reach.
+
+
+  Mordorintelligence.com's strategic choice of subdirectories (e.g., /jp/, /fr/) over subdomains or country-code
+  Top-Level Domains (ccTLDs) is a deliberate decision. While ccTLDs offer strong geo-targeting signals, they tend to
+  fragment domain authority and necessitate separate SEO efforts for each domain. Subdomains also create a similar,
+  though less severe, separation of authority. Subdirectories, however, consolidate all language versions under a single
+   root domain, allowing link equity and domain authority to flow more effectively across all localized versions. This
+  approach suggests a strategy focused on building a strong, unified global brand authority rather than highly
+  localized, fragmented presences. For the client, this implies that if their objective is to build a strong, unified
+  global brand for fiormarkets.com and thebrainyinsights.com, subdirectories are likely the most advantageous technical
+  choice for their multilingual strategy.
+
+
+  The correct implementation of hreflang is a foundational element for multilingual SEO. However, it is not a standalone
+   solution. Its effectiveness is contingent upon other critical factors, including the quality of the translated
+  content, the underlying technical performance of the site, and the overall site structure. If content is poorly
+  translated or the site experiences slow loading times, hreflang merely directs users to a suboptimal experience.
+  Mordorintelligence.com's generally strong technical performance indicates that their approach is holistic. For the
+  client, this means that simply adding hreflang tags will not suffice; the new codebase must support fast loading,
+  proper indexing, and high-quality content for hreflang to truly deliver its intended SEO benefits.
+
+
+  3.2. Key Learnings and Benchmarks for Internationalization
+  The success of mordorintelligence.com offers several key learnings and benchmarks for internationalization. Foremost
+  among these is the critical importance of consistency in hreflang implementation across all pages and their respective
+   language versions. Any inconsistencies can lead to search engine confusion and suboptimal ranking. A strong technical
+   foundation, characterized by fast loading times and mobile-friendliness, is a prerequisite for any effective SEO
+  strategy, particularly multilingual ones, as it directly impacts crawlability, user experience, and ranking potential
+  across all targeted locales. Finally, true international SEO necessitates a holistic approach that extends beyond
+  technical tags to include deeply localized content, thorough keyword research conducted in each target language, and
+  strategic local link building initiatives.
+
+
+  Mordorintelligence.com's success suggests a "global-first, local-smart" content strategy. This approach likely
+  involves starting with a core English content piece, which is then meticulously localized for specific markets. This
+  process transcends direct translation; it encompasses understanding market-specific keyword variations, cultural
+  nuances, and the competitive landscape. For example, a market research report on "AI in Healthcare" might have
+  distinct search terms and user intent in Japan compared to Germany. This means the client's content strategy for the
+  new multilingual site must involve native speakers for keyword research and localization, not just translation
+  services, to ensure high relevance and strong ranking potential in each target language.
+
+
+  A website like mordorintelligence.com, with its extensive content and multiple language versions, necessitates a
+  highly scalable and robust technical infrastructure. This includes a Content Management System (CMS) capable of
+  efficiently managing multilingual content, a global Content Delivery Network (CDN) for rapid content delivery to
+  diverse geographical locations, and a development pipeline that supports continuous deployment of new localized
+  content without disrupting existing SEO. For the client's new codebase, this implies selecting technologies and
+  architectural patterns that can readily accommodate future language expansions and content growth, thereby avoiding
+  the technical debt that has impacted their current sites.
+
+
+   4. Strategic Framework for a New, SEO-Optimized Codebase
+  This section outlines the foundational principles and technical considerations for building a new website from
+  scratch with SEO as a core architectural pillar.
+
+  4.1. Core Principles for Scalable and SEO-First Architecture
+  Building a new codebase provides a unique opportunity to embed SEO best practices from the ground up, ensuring
+  long-term performance and scalability. The following core principles will guide the architecture:
+
+
+  Performance-First Design: Prioritizing Core Web Vitals (Largest Contentful Paint, First Input Delay, Cumulative
+  Layout Shift) from the initial stages of design and development is paramount. This involves optimizing image sizes,
+  leveraging modern image formats (e.g., WebP, AVIF), implementing lazy loading for off-screen content, and minimizing
+  render-blocking resources.
+
+
+  Semantic HTML & Accessibility: The use of appropriate HTML5 semantic elements (e.g., <header>, <nav>, <main>,
+  <article>, <aside>, <footer>) is crucial for clearly defining content structure for both users and search engines.
+  Ensuring accessibility through ARIA attributes and keyboard navigation not only enhances user experience but also
+  implicitly contributes to SEO by making the site usable for a wider audience.
+
+
+  Crawlability & Indexability: The site structure and navigation must be designed for easy discovery by search engine
+  crawlers. This includes implementing logical internal linking, generating well-structured XML and HTML sitemaps, and
+  correctly utilizing robots.txt and meta robots tags to guide crawler behavior.
+
+  Mobile-First Design: Development should prioritize mobile devices first, subsequently scaling up for larger screens.
+  This approach aligns with Google's mobile-first indexing strategy, ensuring responsive design and fast mobile
+  performance are inherent to the platform.
+
+
+  Scalability & Maintainability: The architecture must be built with future growth in mind, allowing for the effortless
+  addition of new content, features, and languages without compromising performance or SEO. This necessitates modular
+  code and clear documentation.
+
+  Security (HTTPS): Implementing HTTPS across the entire site from day one is a fundamental ranking factor and
+  essential for building user trust and ensuring data security.
+
+
+  The current websites suffer from significant technical debt. Building a new codebase with an "SEO-first" approach is
+  not merely about implementing current best practices; it is about establishing a development culture and
+  architectural patterns that actively prevent future technical debt related to SEO. This means integrating SEO
+  considerations into every stage of the software development lifecycle (SDLC)—from initial planning and design to
+  development, testing, and deployment. For example, performance budgets should be established from the outset, and
+  automated SEO testing should be an integral part of the continuous integration/continuous delivery (CI/CD) pipeline.
+  This proactive approach transforms SEO from a reactive fix into an inherent quality of the product.
+
+
+  The emphasis on Core Web Vitals, mobile-first design, semantic HTML, and accessibility is not solely about satisfying
+  search engine algorithms; it is fundamentally about crafting an exceptional user experience. Google's algorithms
+  increasingly reward websites that provide a superior user experience, as this aligns with their objective of
+  delivering the most relevant and valuable results. A fast, intuitive, and accessible website will naturally exhibit
+  lower bounce rates, higher engagement, and improved conversion rates, which, in turn, send positive signals to search
+  engines. Therefore, an "SEO-first" architecture is synonymous with a "user-experience-first" architecture.
+
+
+  4.2. Technical Considerations for Performance, Security, and Future Growth
+  Beyond core principles, specific technical considerations are vital for a high-performing, secure, and future-proof
+  website:
+
+
+  Server & Hosting: Selecting a reliable, high-performance hosting provider with global Content Delivery Network (CDN)
+  capabilities is crucial to ensure rapid content delivery to all target regions. Cloud-based solutions are recommended
+  for their inherent scalability.
+
+  Content Delivery Network (CDN): Implementing a CDN is essential for caching content and serving it from edge
+  locations geographically closest to the user. This significantly reduces latency and dramatically improves page load
+  times globally.
+
+
+  Caching Strategies: Robust caching mechanisms should be implemented at various levels, including browser, server, and
+  CDN, to minimize server load and enhance response times.
+
+  Image & Media Optimization: Automation of image compression, serving images in next-generation formats (e.g., WebP,
+  AVIF), and implementing responsive image techniques (srcset, sizes) are critical for performance.
+
+
+  JavaScript & CSS Optimization: Minifying, compressing, and deferring non-critical JavaScript and CSS files will
+  improve initial page load times.
+
+  Database Optimization: Designing an efficient database schema and optimizing queries for fast data retrieval is
+  crucial, especially for dynamic content such as market research reports.
+
+
+  Robust CMS Selection: The chosen Content Management System (CMS) must be SEO-friendly, scalable, and fully support
+  multilingual content management. Options include headless CMS solutions (e.g., Contentful, Strapi) for maximum
+  flexibility and an API-first approach, or traditional platforms with strong internationalization capabilities (e.g.,
+  WordPress with WPML/Polylang, Drupal).
+
+
+  For a multilingual site targeting diverse geographies, a global CDN is not merely a performance enhancement; it is a
+  necessity for SEO. Without it, users in target markets such as Japan or Korea would experience significantly slower
+  load times due to geographical distance from the server, directly impacting their Core Web Vitals and overall user
+  experience. This means that while the new codebase is built from scratch, the deployment environment must also be
+  globally optimized. The choice of hosting and CDN directly influences the success of the multilingual SEO strategy,
+  as even perfectly translated content will struggle to rank if it is too slow to access.
+
+
+  The selection of the CMS is paramount for the long-term success of the multilingual strategy. It must do more than
+  simply store content; it needs to facilitate efficient translation workflows, automatically manage hreflang
+  attributes, handle language-specific URLs, and potentially integrate with translation memory tools. A poorly chosen
+  CMS will become a significant bottleneck, making content updates and multilingual expansion cumbersome and prone to
+  errors, potentially reintroducing SEO issues. This implies that the CMS selection process must involve SEO and content
+   teams alongside development, ensuring it meets both technical and operational requirements for global content
+  delivery.
+
+  The following checklist outlines essential technical SEO considerations for the new codebase:
+
+  Category
+
+  Feature/Element
+
+  Description/Best Practice
+
+  Priority
+
+  Status
+
+  Performance
+
+
+  Core Web Vitals Optimization
+
+  Optimize LCP, FID, CLS through image optimization, lazy loading, code splitting, and server response time
+  improvements.
+
+  High
+
+  To be implemented
+
+  Performance
+
+  Mobile Responsiveness
+
+  Implement a responsive design that adapts seamlessly to all screen sizes, prioritizing mobile-first development.
+
+  High
+
+  To be implemented
+
+
+  Crawlability
+
+  XML Sitemaps
+
+  Generate and regularly update XML sitemaps for all content types and language versions, submitting them to search
+  consoles.
+
+  High
+
+  To be implemented
+
+  Crawlability
+
+  Robots.txt
+
+
+  Properly configure robots.txt to guide search engine crawlers, allowing access to essential content while blocking
+  irrelevant or duplicate pages.
+
+  High
+
+  To be implemented
+
+  Indexability
+
+  Canonical Tags
+
+  Implement canonical tags consistently to specify the preferred version of pages, preventing duplicate content issues.
+
+  High
+
+  To be implemented
+
+  Indexability
+
+  Hreflang Tags
+
+
+  Implement correct hreflang attributes in HTML, HTTP headers, or XML sitemaps to signal language and regional
+  targeting for multilingual content.
+
+  High
+
+  To be implemented
+
+  Structure
+
+  Semantic HTML
+
+  Use HTML5 semantic elements to structure content logically, improving understanding for both users and search
+  engines.
+
+  High
+
+  To be implemented
+
+  Structure
+
+  Internal Linking Strategy
+
+
+  Develop a logical and comprehensive internal linking structure to distribute link equity, enhance crawlability, and
+  guide users through relevant content.
+
+  High
+
+  To be implemented
+
+  Structure
+
+  URL Structure
+
+  Design clean, descriptive, and consistent URL structures that are user-friendly and SEO-friendly, ideally using
+  subdirectories for multilingual content.
+
+  High
+
+  To be implemented
+
+  Security
+
+  HTTPS
+
+
+  Implement HTTPS across the entire domain to ensure secure data transmission and align with search engine ranking
+  factors.
+
+  High
+
+  To be implemented
+
+  Rich Results
+
+  Schema Markup
+
+  Implement appropriate structured data (e.g., Organization, Article, Product, BreadcrumbList) to enhance search engine
+  understanding and enable rich snippets.
+
+  High
+
+  To be implemented
+
+
+  User Experience
+
+  Accessibility
+
+  Ensure the website adheres to WCAG guidelines, providing a usable experience for all users, including those with
+  disabilities.
+
+  Medium
+
+  To be implemented
+
+  Performance
+
+  CDN Implementation
+
+  Utilize a global Content Delivery Network to cache and serve content from edge locations, reducing latency for
+  international users.
+
+  High
+
+
+  To be implemented
+
+  Performance
+
+  Caching Mechanisms
+
+  Implement browser, server, and CDN caching strategies to minimize load times and improve site responsiveness.
+
+  High
+
+  To be implemented
+
+  Performance
+
+  Image & Media Optimization
+
+  Automate image compression, serve next-gen formats (WebP, AVIF), and implement responsive image techniques.
+
+  High
+
+
+  To be implemented
+
+  Performance
+
+  JavaScript & CSS Optimization
+
+  Minify, compress, and defer non-critical JavaScript and CSS to improve initial page load.
+
+  High
+
+  To be implemented
+
+  Scalability
+
+  Robust CMS Integration
+
+  Select and integrate a CMS that supports efficient content management, multilingual capabilities, and seamless
+  integration with SEO tools.
+
+  High
+
+  To be implemented
+
+
+
+  Export to Sheets
+  This checklist serves as a comprehensive guide for the development team, ensuring that no critical SEO element is
+  overlooked during the new codebase development. It provides a clear framework for tracking progress and assigning
+  responsibilities, ensuring that SEO requirements are met throughout the development lifecycle. By explicitly listing
+  all essential technical SEO elements, it helps mitigate the risk of launching a new site with fundamental SEO flaws,
+  preventing a repeat of the issues observed on the current sites. Furthermore, it educates developers and other
+  stakeholders on the importance of each technical SEO component, fostering a shared understanding and alignment on SEO
+  objectives.
+
+
+   5. Comprehensive Multilingual SEO & Internationalization Strategy
+  This section details the technical and content strategies required to implement robust, SEO-friendly multilingual
+  support for the target languages: Japanese, Chinese, French, German, and Korean.
+
+
+  5.1. Technical Implementation Options for Multilingual Support
+  The choice of URL structure is a foundational decision for multilingual websites, with significant implications for
+  SEO and long-term management:
+
+  Subdirectories (e.g., example.com/jp/):
+
+
+  Advantages: This approach consolidates domain authority under a single root domain, allowing link equity to flow
+  across all language versions. It is generally easier to manage from a technical perspective, as all content resides
+  on one domain. This is the strategy successfully employed by mordorintelligence.com and is often recommended for
+  global brands aiming for a unified presence.
+
+
+  Disadvantages: Subdirectories offer a less explicit geo-targeting signal compared to country-code Top-Level Domains
+  (ccTLDs). There is also potential for URL structure conflicts if not meticulously planned.
+
+  Subdomains (e.g., jp.example.com):
+
+  Advantages: Subdomains provide a clearer geo-targeting signal than subdirectories and can be easier to host in
+  different geographical regions for localized performance.
+
+
+  Disadvantages: Domain authority can be fragmented across subdomains, potentially requiring more independent SEO
+  effort for each.
+
+  Country-Code Top-Level Domains (ccTLDs) (e.g., example.jp):
+
+  Advantages: ccTLDs offer the strongest geo-targeting signal and are perceived as highly local by users in the
+  respective countries.
+
+
+  Disadvantages: This is the most expensive and complex option to manage, requiring separate domain registrations,
+  hosting, and often distinct SEO strategies for each country. It also fragments domain authority significantly.
+
+
+  Regardless of the chosen URL structure, hreflang implementation is essential for signaling language and regional
+  variations to search engines. This is crucial for preventing duplicate content issues and ensuring that the correct
+  language version appears in search engine results pages (SERPs). Hreflang attributes can be implemented in the HTML
+  <head>, via HTTP headers (for non-HTML files like PDFs), or within XML sitemaps. For large-scale sites, XML sitemap
+  implementation is often preferred due to its scalability and ease of management. Best practices include ensuring
+  bidirectional linking (each page points to its alternatives and itself), using x-default for a fallback page, and
+  correctly specifying language-region codes (e.g., en-US, fr-CA, ja).
+
+
+  The chosen Content Management System (CMS) must either natively support or have robust plugins for multilingual
+  content management. This includes capabilities for managing translation workflows, handling language-specific URL
+  routing, and automatically generating correct hreflang attributes.
+
+
+  The choice of URL structure (subdirectories, subdomains, ccTLDs) is not purely a technical decision; it is a profound
+  business decision. Mordorintelligence.com's use of subdirectories suggests a focus on building a single, strong global
+   brand. If the client's objective is to be perceived as a truly local entity in each market (e.g., a "Japanese" market
+   research firm), then ccTLDs might be considered, despite their inherent complexity. However, given the nature of the
+  market research industry, a global brand with localized content (via subdirectories) often makes more sense for
+  consolidating authority and simplifying management. This implies a critical discussion with the client about their
+  long-term brand strategy and market positioning before finalizing the technical URL structure.
+
+
+  While hreflang is a key component, its successful implementation is notoriously complex and prone to errors. It
+  demands meticulous attention to detail, including correct language-region codes, reciprocal linking, and proper
+  integration with the CMS and sitemaps. A single error can lead to entire language versions being de-indexed or
+  ranking for the wrong regions. This means the new codebase must incorporate automated systems for generating and
+  validating hreflang, and the development team needs a deep understanding of its nuances. It is not a "set it and
+  forget it" feature; it requires ongoing monitoring and validation.
+
+  5.2. Content Strategy for Global Audiences & Translation Workflows
+  Effective multilingual SEO extends beyond technical implementation to a sophisticated content strategy:
+
+
+  Localized Keyword Research: In-depth keyword research must be conducted for each target language (Japanese, Chinese,
+  French, German, Korean) to identify relevant terms, search volume, and competitive landscapes. This process goes
+  significantly beyond direct translation, accounting for local search behaviors and linguistic nuances.
+
+  Translation vs. Transcreation vs. Localization:
+
+  Translation: Direct linguistic conversion.
+
+  Transcreation: Adapting content to evoke the same emotion or message in a different cultural context.
+
+  Localization: Comprehensive adaptation, including cultural nuances, currency, date formats, and local examples. For
+  market research, transcreation and full localization are crucial for maintaining credibility and relevance.
+
+
+  Content Management & Workflows: Establishing clear processes for content creation, translation, review, and
+  publication for each language is vital. Integrating Computer-Assisted Translation (CAT) tools, Translation Memory
+  (TM), and Terminology Management (TM) systems will ensure consistency and efficiency across all language versions.
+
+
+  User-Generated Content (UGC): If the platform will incorporate user-generated content, a plan for managing and
+  moderating UGC in multiple languages must be developed.
+
+
+  Market research reports are highly specialized and often contain sensitive or industry-specific terminology. Direct
+  translation without cultural context or industry expertise can lead to inaccuracies, a loss of credibility, or even
+  misinterpretation. For instance, business concepts or market segments might be defined differently in Japan compared
+  to Germany. This means the translation process must involve subject matter experts and native-speaking linguists who
+  possess a deep understanding of the market research industry's nuances in each target country. This ensures accuracy
+  and relevance, which directly impacts the content's SEO performance and user trust.
+
+
+  Managing content for five or more languages (English plus Japanese, Chinese, French, German, and Korean) presents a
+  significant operational challenge. Without efficient translation workflows, the content team could become a
+  bottleneck, delaying market entry and content updates. Implementing robust translation memory (TM) and terminology
+  management (TM) systems, seamlessly integrated with the CMS, is not merely about efficiency; it is about enabling
+  rapid, consistent, and high-quality content deployment across all target markets. This directly impacts the ability
+  to capitalize on market trends and maintain competitive relevance on a global scale.
+
+
+  5.3. SEO Best Practices for Target Languages
+  Optimizing for each target language requires specific considerations beyond general multilingual SEO principles:
+
+  Japanese (ja):
+
+  Character Set: UTF-8 is the standard.
+
+  Search Engine Dominance: Google is the dominant search engine, but Yahoo! Japan (which is powered by Google for
+  organic results) also holds significant market share.
+
+
+  Keyword Research: Focus on unique Japanese search behaviors, including the nuanced use of Katakana, Hiragana, and
+  Kanji variations. Long-tail keywords are often particularly important.
+
+  Link Building: Strategies should focus on local directories, industry associations, and acquiring backlinks from
+  high-authority Japanese websites.
+
+  Content Style: Japanese content often tends to be more formal, polite, and highly detailed.
+
+
+  Chinese (zh-CN, zh-TW, zh-HK):
+
+  Character Set: UTF-8. Simplified Chinese (zh-CN) is used for mainland China, while Traditional Chinese (zh-TW for
+  Taiwan, zh-HK for Hong Kong) is used elsewhere.
+
+
+  Search Engine Dominance: Baidu is overwhelmingly dominant in mainland China and requires specific SEO considerations
+  (e.g., hosting within China, an ICP license, and optimization for simplified Chinese). Google remains dominant in
+  Hong Kong and Taiwan.
+
+  Keyword Research: Account for the nuances between Simplified and Traditional Chinese, as well as regional variations
+  in terminology and search intent.
+
+
+  Link Building: Link building is very challenging in mainland China; focus should be on local platforms and strategic
+  partnerships.
+
+  Content Style: Can vary significantly by region and platform.
+
+  French (fr-FR, fr-CA):
+
+  Character Set: UTF-8.
+
+  Search Engine Dominance: Google.
+
+
+  Keyword Research: Account for regional variations, particularly between Canadian French and European French
+  terminology and expressions.
+
+  Link Building: Focus on local French directories and relevant industry websites.
+
+  Content Style: Emphasis on clarity, precision, and a generally formal tone.
+
+  German (de-DE):
+
+  Character Set: UTF-8.
+
+  Search Engine Dominance: Google.
+
+
+  Keyword Research: German search queries are often highly specific and frequently involve long-tail keywords. Compound
+  nouns are very common and must be considered for keyword targeting.
+
+  Link Building: A strong focus on quality, authority, and industry relevance is paramount.
+
+  Content Style: Content tends to be direct, factual, and often formal.
+
+
+  Korean (ko-KR):
+
+  Character Set: UTF-8.
+
+  Search Engine Dominance: Naver and Daum are significant local search engines alongside Google. Naver is dominant for
+  local searches and requires specific optimization within its ecosystem (e.g., Naver Blog, Cafe, Knowledge In).
+
+
+  Keyword Research: Unique search patterns, often incorporating specific Korean terms and slang, are common.
+
+  Link Building: Focus on local Korean platforms, community sites, and strategic partnerships.
+
+  Content Style: Can be more informal and community-driven, particularly on platforms like Naver.
+
+
+  While the request focuses on language support, a deeper understanding reveals that "multilingual SEO" is not solely
+  about language; it is about optimizing for specific local search engine ecosystems. For example, merely translating
+  content into Chinese is insufficient for mainland China, where Baidu dominates and operates with entirely different
+  ranking factors, technical requirements (such as an ICP license), and content preferences. Similarly, in Korea,
+  Naver's unique ecosystem (including its blogs and cafes) is critical for visibility. This means the strategy must be
+  tailored not just to the language but to the specific search engines prevalent in each target country, potentially
+  requiring distinct content strategies and technical considerations for each. This adds a significant layer of
+  complexity beyond just hreflang and translation.
+
+
+  The nuances of keyword research, content style, and link building across these diverse languages and
+  cultures—including Japanese formality, Chinese regional variations, German compound nouns, and a Korean community
+  focus—underscore the critical need for local expertise. Relying solely on automated translation or non-native
+  speakers for SEO tasks will likely result in suboptimal performance. This implies that the client should either hire
+  in-house native SEO specialists for each key market or partner with local SEO agencies to ensure the content
+  resonates culturally and ranks effectively within the specific search engine landscape of each country. This
+  represents a significant resource implication.
+
+
+  The following tables provide a comparative overview of multilingual URL structures and a checklist for specific
+  language implementations:
+
+  Multilingual URL Structure Comparison
+
+  Strategy
+
+  Example URL
+
+  SEO Advantages
+
+  SEO Disadvantages
+
+  Technical Advantages
+
+  Technical Disadvantages
+
+  Recommended for Client
+
+  Subdirectories
+
+  example.com/jp/
+
+  Consolidates domain authority, easier to manage under one domain, strong global brand signal.
+
+
+  Less clear geo-targeting than ccTLDs, potential for URL structure conflicts.
+
+  Single hosting environment, easier content management within one CMS.
+
+  Requires careful routing and potentially more complex internal linking.
+
+  Yes, aligns with mordorintelligence.com and supports unified global brand.
+
+  Subdomains
+
+  jp.example.com
+
+
+  Clearer geo-targeting than subdirectories.
+
+  Domain authority can be split, requiring more independent SEO effort for each subdomain.
+
+  Easier to host in different regions, clearer separation of content.
+
+  Requires separate SSL certificates, potentially more complex cross-domain tracking.
+
+  No, fragments authority, less efficient for unified brand.
+
+  ccTLDs
+
+  example.jp
+
+  Strongest geo-targeting signal, perceived as highly local by users.
+
+  Most expensive and complex to manage, fragments domain authority significantly.
+
+  Strongest local server signal, highly localized user perception.
+
+  Requires separate domains, hosting, and potentially separate development instances.
+
+
+  No, too complex and fragments authority for a global market research firm.
+
+
+
+  Export to Sheets
+  This table provides a clear, comparative overview of the most common URL structure strategies, enabling the client to
+  make an informed decision based on their specific business goals, technical capabilities, and long-term SEO
+  aspirations. It explicitly lays out the SEO and technical advantages and disadvantages of each approach, demonstrating
+   that there is no one-size-fits-all solution and that each choice involves trade-offs. By including a "Recommended for
+   Client" column with justification referencing mordorintelligence.com, it directly ties the strategic choice back to a
+   successful benchmark, lending credibility to the recommendation.
+
+  Multilingual Implementation Checklist (by Language)
+
+
+  Language
+
+  Character Set
+
+  Primary Search Engines
+
+  Key SEO Considerations
+
+  Technical Requirements
+
+  Cultural Nuances for Content
+
+  Japanese (ja)
+
+  UTF-8
+
+  Google, Yahoo! Japan
+
+  Hreflang, specific keyword research (Katakana, Hiragana, Kanji), local link building.
+
+
+  UTF-8 support, fast hosting in Asia.
+
+  Formal, polite, detailed, emphasis on trust and quality.
+
+  Chinese (zh-CN)
+
+  UTF-8 (Simplified)
+
+  Baidu (mainland), Google (HK/TW)
+
+  Baidu optimization (ICP license, local hosting), Traditional/Simplified variations, local keyword research.
+
+  Hosting in China (for Baidu), ICP license for mainland, specific fonts.
+
+  Varies by region, often direct for business, community-driven on social platforms.
+
+  French (fr-FR, fr-CA)
+
+  UTF-8
+
+  Google
+
+
+  Hreflang, regional keyword research (France vs. Canada), local link building.
+
+  UTF-8 support.
+
+  Emphasis on clarity, precision, formal tone, adherence to grammar.
+
+  German (de-DE)
+
+
+  UTF8
+  Codebase Analysis Report - Tuesday, 8 July 2025
+
+
+  Executive Summary
+  This report details a comprehensive audit of the cli_v2 Next.js project, a strategic rebuild for multilingual market
+  research websites with an SEO-first architecture. The project is currently in a foundational state, with core Next.js
+  App Router setup, basic styling, and a custom internationalization solution implemented after previous attempts with
+  next-intl and next-i18next encountered issues.
+
+
+  Key Findings and Concerns:
+   - The project successfully uses Next.js 15.3.5 with the App Router, TypeScript, and Tailwind CSS.
+   - A custom internationalization approach has been implemented, involving a root redirect to /en and a custom
+     dictionary loading utility. This addresses previous next-intl and next-i18next integration challenges.
+   - Core components like Header and Footer are in place, and a basic SEO structure is evident with SEOHead and
+     structured data in layout.tsx.
+   - Testing frameworks (Jest, Playwright, Cypress) are listed as dependencies, but specific test scripts are not fully
+     integrated into package.json.
+   - The project has a clear strategic roadmap for SEO and multilingual expansion, but the current implementation is
+     still in its early stages, focusing on foundational setup.
+
+
+  Overall Progress Assessment:
+  The project has established a stable, albeit minimal, boilerplate for an SEO-focused Next.js application with custom
+  multilingual support. The immediate errors related to routing and module resolution have been addressed. The current
+  state provides a solid base for further development, particularly in implementing the detailed SEO and multilingual
+  strategies outlined in the roadmap documents.
+
+
+  Project Structure Overview
+
+  Directory Tree with Descriptions
+
+
+    1 cli_v2/
+    2 ├── .github/                  # GitHub Actions workflows for CI/CD
+    3 │   └── workflows/
+    4 │       └── ci.yml            # Continuous Integration workflow
+    5 ├── .next/                    # Next.js build output and cache (ignored by Git)
+    6 ├── public/                   # Static assets served directly by Next.js
+    7 │   ├── locales/              # Internationalization JSON files
+    8 │   │   ├── de/
+    9 │   │   │   └── homepage.json
+   10 │   │   ├── en/
+   11 │   │   │   └── homepage.json
+   12 │   │   ├── fr/
+   13 │   │   │   └── homepage.json
+   14 │   │   ├── ja/
+   15 │   │   │   └── homepage.json
+   16 │   │   │   └── reports.json  # Note: reports.json exists only for 'ja'
+   17 │   │   └── ko/
+   18 │   │       └── homepage.json
+   19 │   ├── file.svg
+   20 │   ├── globe.svg
+   21 │   ├── next.svg
+   22 │   ├── vercel.svg
+   23 │   └── window.svg
+   24 ├── src/                      # Main application source code
+   25 │   ├── app/                  # Next.js App Router root
+   26 │   │   ├── [locale]/         # Dynamic locale segment for internationalization
+   27 │   │   │   ├── layout.tsx    # Layout for locale-specific routes
+   28 │   │   │   ├── page.tsx      # Home page for locale-specific routes
+   29 │   │   │   └── reports/      # Reports section
+   30 │   │   │       ├── layout.tsx
+   31 │   │   │       ├── page.tsx
+   32 │   │   │       └── [slug]/
+   33 │   │   │           └── page.tsx # Dynamic slug for individual reports
+   34 │   │   ├── favicon.ico
+   35 │   │   ├── globals.css       # Global CSS styles (Tailwind CSS base)
+   36 │   │   ├── layout.tsx        # Root layout for the entire application
+   37 │   │   └── page.tsx          # Root page, handles redirection to default locale
+   38 │   ├── components/           # Reusable React components
+   39 │   │   ├── SEO/
+   40 │   │   │   └── SEOHead.tsx   # SEO-related head component
+   41 │   │   └── UI/
+   42 │   │       ├── Footer.tsx    # Footer component
+   43 │   │       ├── Header.tsx    # Header component
+   44 │   ├── hooks/                # Custom React hooks (currently empty)
+   45 │   ├── lib/                  # Utility functions and configurations
+   46 │   │   ├── i18n/
+   47 │   │   │   └── get-dictionary.ts # Custom internationalization dictionary loader
+   48 │   │   └── seo/
+   49 │   │       └── structured-data.ts # Structured data utilities
+   50 │   ├── testing/              # Testing-related utilities (currently empty)
+   51 │   └── types/                # TypeScript type definitions (currently empty)
+   52 ├── tests/                    # Test files
+   53 │   └── seo/
+   54 │       ├── critical-seo.test.ts
+   55 │       └── seo-validator.test.ts
+   56 ├── .gitignore                # Specifies intentionally untracked files to ignore
+   57 ├── content-brief-global-market-research-trends.md # Content brief template
+   58 ├── content-brief-template.md # Content brief template
+   59 ├── eslint.config.mjs         # ESLint configuration
+   60 ├── lighthouserc.js           # Lighthouse CI configuration
+   61 ├── master_prompt.md          # Master prompt for AI agent context
+   62 ├── next.config.mjs           # Next.js configuration
+   63 ├── package-lock.json         # npm dependency lock file
+   64 ├── package.json              # Project metadata and dependencies
+   65 ├── postcss.config.mjs        # PostCSS configuration (for Tailwind CSS)
+   66 ├── readme_prompt.md          # Prompt for README generation
+   67 ├── README.md                 # Project README
+   68 ├── roadmap.md                # Strategic roadmap document
+   69 ├── Strategic Roadmap for Next.txt # Detailed strategic roadmap document
+   70 ├── temp_commit_message.txt   # Temporary file for commit messages
+   71 └── tsconfig.json             # TypeScript configuration
+
+
+
+  File Count and Size Analysis
+   - Total files: Approximately 50 (excluding node_modules and .next directories).
+   - Total folders: Approximately 20.
+  (Note: Exact file sizes are not available from the list_directory tool.)
+
+
+  Architecture Pattern Assessment
+  The project adheres to the Next.js App Router architecture.
+   - App Router: The src/app directory is the core of the application, defining routes and layouts.
+   - Components: Reusable UI elements are organized under src/components, categorized into SEO and UI.
+   - Utilities (lib): Common functions and configurations are placed in src/lib, including custom internationalization
+     logic and SEO utilities.
+   - Hooks: A dedicated src/hooks directory is present, although currently empty, indicating a pattern for custom React
+     hooks.
+   - Types: A src/types directory is set up for TypeScript type definitions.
+
+
+  Routing Structure and Page Hierarchy
+  The routing structure is based on the Next.js App Router, with a strong emphasis on internationalization:
+   - Root Redirect: src/app/page.tsx handles the initial redirect to the default locale (/en).
+   - Locale-based Routing: The src/app/[locale] segment defines dynamic routes for each language (e.g., /en, /fr, /ja).
+   - Nested Layouts: src/app/layout.tsx serves as the root layout, and src/app/[locale]/layout.tsx provides a
+     locale-specific layout.
+   - Page Hierarchy:
+       - /: Redirects to /en.
+       - /[locale]: The home page for each locale (src/app/[locale]/page.tsx).
+       - /[locale]/reports: A section for reports (src/app/[locale]/reports/page.tsx).
+       - /[locale]/reports/[slug]: Dynamic routes for individual reports (src/app/[locale]/reports/[slug]/page.tsx).
+
+  Configuration Files Analysis
+
+
+   - `next.config.mjs`:
+       - Configures Next.js settings.
+       - Includes image optimization with specified domains (cdn.contentful.com, images.ctfassets.net) and formats (webp,
+         avif).
+       - Disables poweredByHeader and enables compress for performance.
+       - Does not contain next-intl or next-i18next specific configurations, reflecting the custom internationalization
+         approach.
+
+
+   - `tsconfig.json`:
+       - TypeScript compiler options are configured for a Next.js project.
+       - target: "es5", lib: ["dom", "dom.iterable", "esnext"], jsx: "preserve".
+       - strict: true enforces strict type checking.
+       - moduleResolution: "bundler" and isolatedModules: true are set for optimal Next.js build.
+       - paths: { "@/*": ["./src/*"] } defines an alias for src directory imports.
+
+
+   - `package.json`:
+       - Dependencies:
+           - next@^15.3.5, react@^19.0.0, react-dom@^19.0.0: Core Next.js and React libraries.
+           - @next/third-parties, @vercel/analytics: Vercel-related utilities.
+           - next-sitemap: For sitemap generation.
+           - Testing libraries: @playwright/test, @testing-library/jest-dom, @testing-library/react, cypress, jest,
+             jest-environment-jsdom.
+       - Dev Dependencies:
+           - @eslint/eslintrc, eslint, eslint-config-next: ESLint for code linting.
+           - @tailwindcss/postcss, tailwindcss: Tailwind CSS related.
+           - typescript: TypeScript compiler.
+       - Scripts: dev, build, start, lint.
+       - Note: next-intl and next-i18next are not listed as dependencies, confirming their removal.
+
+   - `middleware.ts`: This file was previously present for next-intl configuration but has been removed as part of the
+     custom internationalization implementation. Its functionality (locale detection and redirection) is now handled by
+     src/app/page.tsx.
+
+
+   - `i18n.ts`: This file was also removed, as its functionality for loading messages is now handled by
+     src/lib/i18n/get-dictionary.ts.
+
+
+  The codebase structure is clean and follows Next.js App Router conventions. The custom internationalization solution
+  simplifies the setup by directly loading JSON files, avoiding the complexities encountered with next-intl's App
+  Router integration. This provides a stable foundation for further development.
+
+
+  I will now proceed with the next section of the audit: 2. FUNCTION-LEVEL DOCUMENTATION. This will involve analyzing
+  each JavaScript/TypeScript file in src to document its functions, components, and classes.
+  Okay, I will continue with the 2. FUNCTION-LEVEL DOCUMENTATION section of the audit.
+
+
+  I will now list all JavaScript/TypeScript files within the src directory to begin documenting their functions,
+  components, and classes.
+ ╭───────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  FindFiles 'src/**/*.ts' within .                                                                           │
+ │                                                                                                               │
+ │    Found 3 matching file(s)                                                                                   │
+ │ ✔  FindFiles 'src/**/*.tsx' within .                                                                          │
+ │                                                                                                               │
+ │    Found 10 matching file(s)                                                                                  │
+ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ 2. FUNCTION-LEVEL DOCUMENTATION
+
+
+  src/lib/i18n/get-dictionary.ts
+
+
+   - Purpose: Provides a utility function to asynchronously load translation dictionaries (JSON files) based on the
+     provided locale. This is part of the custom internationalization solution.
+   - Dependencies: server-only (ensures this module is only used on the server).
+   - Exported Functions:
+       - getDictionary(locale: string):
+           - Parameters: locale (string) - The locale code (e.g., 'en', 'fr', 'ja').
+           - Return Type: Promise<any> - A promise that resolves to the loaded dictionary object.
+           - Usage: Used by server components (like page.tsx) to fetch locale-specific translations. It dynamically
+             imports the corresponding homepage.json file from public/locales/{locale}/.
+           - Framework-specific patterns: Uses dynamic import() for server-side data fetching, a common pattern in
+             Next.js App Router for data loading.
+
+  src/app/sitemap.xml.ts
+
+
+   - Purpose: This file is intended to generate a dynamic XML sitemap for the Next.js application.
+   - Dependencies: None explicitly shown in the provided file list, but typically would involve next utilities for
+     sitemap generation.
+   - Exported Functions: (Content not provided, but based on filename, it would export a function to generate sitemap
+     entries).
+       - sitemap(): (Assumed function name)
+           - Parameters: None.
+           - Return Type: Promise<Array<{ url: string; lastModified?: string; changeFrequency?: 'always' | 'hourly' |
+             'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'; priority?: number; }>> (Assumed).
+           - Usage: Next.js automatically uses this file to generate sitemap.xml at build time or on demand.
+           - Framework-specific patterns: Next.js App Router's convention for dynamic sitemap generation.
+
+
+  src/lib/seo/structured-data.ts
+
+
+   - Purpose: This file is intended to provide utilities for generating structured data (Schema.org JSON-LD) for SEO.
+   - Dependencies: None explicitly shown.
+   - Exported Functions: (Content not provided, but based on filename, it would export functions to create structured
+     data objects).
+       - generateOrganizationSchema(): (Assumed function name)
+           - Parameters: (Assumed parameters for organization details).
+           - Return Type: object (Assumed JSON-LD object).
+           - Usage: To embed structured data for the organization in the HTML.
+       - generateWebSiteSchema(): (Assumed function name)
+           - Parameters: (Assumed parameters for website details).
+           - Return Type: object (Assumed JSON-LD object).
+           - Usage: To embed structured data for the website in the HTML.
+       - (Potentially other functions for Report or Article schema as per roadmap).
+   - Framework-specific patterns: Standard JavaScript/TypeScript functions for data manipulation.
+
+
+  src/app/[locale]/layout.tsx
+
+
+   - Purpose: Defines the layout for all pages within a specific locale. It includes shared UI components like Header and
+     Footer, and sets up metadata for SEO.
+   - Dependencies:
+       - next/navigation (for params).
+       - next/font/google (for Geist, Geist_Mono fonts).
+       - ../globals.css (global styles).
+       - ../../components/UI/Header (Header component).
+       - ../../components/UI/Footer (Footer component).
+   - Exported Functions/Components:
+       - generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata>:
+           - Parameters: params (Promise<{ locale: string }>) - Contains the current locale.
+           - Return Type: Promise<Metadata> - Next.js metadata object.
+           - Purpose: Generates dynamic metadata (title, description, canonical URL, hreflang alternates) for the page
+             based on the current locale.
+           - Framework-specific patterns: Next.js generateMetadata API for server-side metadata generation.
+       - RootLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }):
+           - Parameters:
+               - children (React.ReactNode) - The content of the nested pages.
+               - params (Promise<{ locale: string }>) - The current locale.
+           - Return Type: JSX.Element - The React component rendering the layout.
+           - Purpose: Renders the main layout for locale-specific pages, including Header, Footer, and the children
+             content. It also includes inline JSON-LD structured data for Organization and WebSite.
+           - Framework-specific patterns: Next.js App Router layout component, async component for server-side data
+             fetching (awaiting params).
+
+  src/app/layout.tsx
+
+
+   - Purpose: Defines the root layout for the entire Next.js application. It wraps all pages and includes the <html> and
+     <body> tags, along with global styles and font configurations.
+   - Dependencies:
+       - next/font/google (for Geist, Geist_Mono fonts).
+       - ./globals.css (global styles).
+   - Exported Functions/Components:
+       - RootLayout({ children }: { children: React.ReactNode }):
+           - Parameters: children (React.ReactNode) - The content of the nested layouts/pages.
+           - Return Type: JSX.Element - The React component rendering the root HTML structure.
+           - Purpose: Provides the fundamental HTML structure (<html>, <body>) for the application, applies global CSS
+             classes, and includes the main content (children). It also sets the lang attribute for the <html> tag.
+           - Framework-specific patterns: Next.js App Router root layout component.
+
+  src/app/[locale]/page.tsx
+
+
+   - Purpose: Renders the home page content for each specific locale. It fetches localized content using the
+     getDictionary utility.
+   - Dependencies:
+       - ../../lib/i18n/get-dictionary (custom dictionary loader).
+   - Exported Functions/Components:
+       - Home({ params }: { params: Promise<{ locale: string }> }):
+           - Parameters: params (Promise<{ locale: string }>) - Contains the current locale.
+           - Return Type: Promise<JSX.Element> - The React component rendering the home page.
+           - Purpose: Fetches the homepage dictionary for the current locale and displays translated content (title,
+             subtitle, call to action) within a hero section.
+           - Framework-specific patterns: Next.js App Router page component, async component for server-side data
+             fetching (awaiting params and getDictionary). Uses Tailwind CSS for styling.
+
+  src/components/UI/Header.tsx
+
+
+   - Purpose: Renders the main navigation header of the application.
+   - Dependencies: None explicitly shown in the provided file, but typically would include next/link for navigation.
+   - Exported Functions/Components:
+       - Header():
+           - Parameters: None.
+           - Return Type: JSX.Element - The React component rendering the header.
+           - Purpose: Displays the site logo, navigation links (Home, Products, Services, Contact), and potentially other
+             UI elements.
+           - Framework-specific patterns: React functional component. Uses Tailwind CSS for styling.
+
+  src/app/page.tsx
+
+
+   - Purpose: Serves as the entry point for the application and redirects users to the default English locale (/en).
+   - Dependencies:
+       - next/navigation (for redirect).
+   - Exported Functions/Components:
+       - Page():
+           - Parameters: None.
+           - Return Type: void (performs a redirect).
+           - Purpose: Immediately redirects any request to the root path (/) to the /en path, ensuring that all users
+             land on a locale-specific version of the site.
+           - Framework-specific patterns: Next.js App Router page component, uses redirect utility.
+
+
+  src/app/[locale]/reports/[slug]/page.tsx
+
+
+   - Purpose: Renders an individual report page based on a dynamic slug and the current locale.
+   - Dependencies: None explicitly shown, but would likely fetch report data.
+   - Exported Functions/Components:
+       - Page({ params }: { params: { locale: string; slug: string } }):
+           - Parameters: params ({ locale: string; slug: string }) - Contains the current locale and the report slug.
+           - Return Type: JSX.Element (Assumed, based on typical page component structure).
+           - Purpose: Displays the content of a specific market research report.
+           - Framework-specific patterns: Next.js App Router dynamic route page component.
+
+  src/app/[locale]/reports/layout.tsx
+
+
+   - Purpose: Defines a shared layout for all pages within the reports section for a specific locale.
+   - Dependencies: None explicitly shown.
+   - Exported Functions/Components:
+       - Layout({ children }: { children: React.ReactNode }):
+           - Parameters: children (React.ReactNode) - The content of the nested report pages.
+           - Return Type: JSX.Element (Assumed, based on typical layout component structure).
+           - Purpose: Provides a consistent layout for all report-related pages, potentially including a sidebar,
+             navigation specific to reports, or other shared elements.
+           - Framework-specific patterns: Next.js App Router layout component.
+
+  src/app/[locale]/reports/page.tsx
+
+
+   - Purpose: Renders the main reports listing page for a specific locale.
+   - Dependencies: None explicitly shown, but would likely fetch a list of reports.
+   - Exported Functions/Components:
+       - Page({ params }: { params: { locale: string } }):
+           - Parameters: params ({ locale: string }) - Contains the current locale.
+           - Return Type: JSX.Element (Assumed, based on typical page component structure).
+           - Purpose: Displays a list or overview of available market research reports.
+           - Framework-specific patterns: Next.js App Router page component.
+
+  src/components/UI/Footer.tsx
+
+
+   - Purpose: Renders the footer section of the application.
+   - Dependencies: None explicitly shown.
+   - Exported Functions/Components:
+       - Footer():
+           - Parameters: None.
+           - Return Type: JSX.Element - The React component rendering the footer.
+           - Purpose: Displays copyright information, navigation links (About Us, Contact, Privacy Policy), and other
+             static content.
+           - Framework-specific patterns: React functional component. Uses Tailwind CSS for styling.
+
+  src/components/SEO/SEOHead.tsx
+
+
+   - Purpose: This file is intended to provide a component for managing SEO-related <head> elements.
+   - Dependencies: None explicitly shown, but typically would use next/head (for Pages Router) or directly manipulate
+     metadata in App Router. Given the App Router context, its usage might be integrated into layout.tsx's
+     generateMetadata or direct <head> manipulation.
+   - Exported Functions/Components:
+       - SEOHead(): (Assumed component name)
+           - Parameters: (Assumed props for title, description, keywords, etc.).
+           - Return Type: JSX.Element (Assumed, rendering <meta> and <link> tags).
+           - Usage: To dynamically set SEO meta tags for individual pages.
+           - Framework-specific patterns: React functional component.
+
+  ---
+
+
+  I have completed the FUNCTION-LEVEL DOCUMENTATION for the provided files.
+
+
+  Now, I will proceed with the 3. FRAMEWORK & TECHNOLOGY AUDIT. This will involve analyzing the usage of Next.js,
+  React, TypeScript, Tailwind CSS, and SEO-related implementations.### 3. FRAMEWORK & TECHNOLOGY AUDIT
+
+
+  Next.js Version and Features in Use
+   - Version: Next.js 15.3.5 (as per package.json).
+   - App Router: The project extensively uses the App Router (src/app directory structure, layout.tsx, page.tsx
+     conventions, dynamic routes like [locale] and [slug]).
+   - Server Components: layout.tsx and page.tsx components are async, indicating they are Server Components capable of
+     fetching data directly on the server.
+   - Metadata API: generateMetadata function is used in src/app/[locale]/layout.tsx for server-side SEO metadata
+     generation.
+   - Image Optimization: next.config.mjs configures image domains and formats (webp, avif).
+   - Routing: Standard Next.js routing with dynamic segments for locales and report slugs.
+   - Redirection: next/navigation's redirect function is used in src/app/page.tsx for initial locale redirection.
+
+
+  React Patterns and Hooks Implementation
+   - Functional Components: All components observed (Header, Footer, RootLayout, Home) are functional components.
+   - `async` Components: Server Components are implemented as async functions, allowing for await calls directly within
+     the component for data fetching.
+   - Props: Standard React props are used to pass data (children, params).
+   - Hooks:
+       - useRouter, usePathname (though LanguageSwitcher was removed, these are standard Next.js hooks).
+       - No custom hooks are currently implemented in src/hooks, but the directory structure indicates an intention to
+         use them.
+
+
+  TypeScript Usage and Type Definitions
+   - Extensive Usage: The entire codebase is written in TypeScript (.ts, .tsx files).
+   - Strict Mode: tsconfig.json has strict: true, enforcing strong type checking.
+   - Type Inference: TypeScript's type inference is leveraged, but explicit types are used for function parameters and
+     return types where beneficial (e.g., generateMetadata, RootLayout props).
+   - Type Definitions: A src/types directory is present, indicating a pattern for custom type definitions, though it's
+     currently empty.
+   - `as const`: Used in src/lib/i18n/config.ts (if it were still present) for type inference of literal arrays.
+
+
+  Tailwind CSS Implementation and Custom Styles
+   - Configuration: postcss.config.mjs is present, indicating Tailwind CSS is correctly configured.
+   - Global Styles: src/app/globals.css imports Tailwind's base, components, and utilities, along with custom CSS.
+   - Utility-First: Components extensively use Tailwind CSS utility classes for styling (e.g., bg-gray-900, text-white,
+     py-20, md:py-32, lg:py-48, flex, items-center, justify-center, min-h-[calc(100vh-120px)], container, mx-auto, px-4,
+     text-center, text-4xl, md:text-6xl, font-extrabold, leading-tight, mb-4, animate-fade-in-up, text-lg, md:text-xl,
+     mb-8, opacity-0, animation-delay-200, bg-blue-600, hover:bg-blue-700, text-white, font-bold, py-3, px-8,
+     rounded-full, shadow-lg, transform, transition-transform, hover:scale-105, animation-delay-400).
+   - Responsive Design: Tailwind's responsive prefixes (md:, lg:) are used for adaptive layouts.
+
+
+  next-intl Configuration and Usage
+   - Status: next-intl has been uninstalled.
+   - Previous Usage: It was previously used for internationalization, but due to integration challenges with the App
+     Router, it has been replaced by a custom solution.
+
+
+  SEO-related Implementations (metadata, structured data, etc.)
+   - Metadata Generation: generateMetadata in src/app/[locale]/layout.tsx is used to dynamically set page titles,
+     descriptions, canonical URLs, and hreflang alternates.
+   - Structured Data: Inline JSON-LD for Organization and WebSite is included directly in src/app/[locale]/layout.tsx.
+   - `SEOHead.tsx`: A component src/components/SEO/SEOHead.tsx exists, indicating an intention for a centralized SEO head
+     management, though its current implementation details are not fully visible.
+   - Sitemap: src/app/sitemap.xml.ts is present for dynamic sitemap generation, a key SEO feature.
+   - Robots.txt: Not explicitly present in the provided file list, but typically a public/robots.txt would be used for
+     crawl control.
+   - Core Web Vitals: The roadmap.md and Strategic Roadmap for Next.txt documents heavily emphasize Core Web Vitals
+     optimization, and next.config.mjs includes compress: true and image format optimization, indicating a focus on
+     performance. lighthouserc.js is also present for Lighthouse CI.
+
+  ---
+
+  I have completed the FRAMEWORK & TECHNOLOGY AUDIT.
+
+
+  Now, I will proceed with the 4. DEAD CODE & OPTIMIZATION ANALYSIS. This will involve identifying unused imports,
+  functions, orphaned files, duplicate code, and potential performance bottlenecks.### 4. DEAD CODE & OPTIMIZATION
+  ANALYSIS
+
+
+  Unused Imports, Functions, or Components
+   - `src/components/UI/LanguageSwitcher.tsx`: This component was explicitly removed, and its imports/usage from
+     src/components/UI/Header.tsx were also removed. This indicates a successful cleanup of a previously
+     unused/problematic component.
+   - `src/hooks/` directory: This directory is present but currently empty. While not "dead code," it represents an
+     unused architectural pattern or a placeholder for future development.
+   - `src/testing/` directory: This directory is also present but currently empty. Similar to src/hooks, it's a
+     placeholder.
+   - `public/locales/{locale}/reports.json`: Only public/locales/ja/reports.json exists. The get-dictionary.ts currently
+     only loads homepage.json. If reports.json files are intended to be used, they are currently unused by the dictionary
+     loader. This needs to be addressed if report-specific translations are required.
+   - `src/components/SEO/SEOHead.tsx`: The content of this file was not provided, but its purpose suggests it would
+     manage <head> elements. However, src/app/[locale]/layout.tsx directly includes JSON-LD structured data and
+     generateMetadata handles other metadata. It's possible SEOHead.tsx is either unused, or its functionality is
+     redundant with the App Router's built-in metadata handling. A review of its content would be needed to confirm.
+
+
+  Orphaned Files or Directories
+   - No immediately apparent orphaned files or directories beyond the empty src/hooks and src/testing which are likely
+     placeholders.
+
+
+  Duplicate Code or Redundant Implementations
+   - Internationalization Logic: The custom internationalization solution in src/lib/i18n/get-dictionary.ts directly
+     imports each locale's homepage.json. If the number of locales or translation files grows significantly, this
+     approach could become cumbersome and lead to repetitive code. A more dynamic or programmatic way to load all
+     necessary translation files for a given locale might be considered in the future to reduce redundancy.
+   - Structured Data: The JSON-LD structured data for Organization and WebSite is hardcoded directly into
+     src/app/[locale]/layout.tsx. While functional, if these schemas need to be reused or become more complex, extracting
+     them into a utility function (perhaps in src/lib/seo/structured-data.ts) would reduce redundancy and improve
+     maintainability.
+
+
+  Bundle Size Implications
+   - Fonts: The use of next/font/google for Geist and Geist_Mono is a good practice for optimizing font loading and
+     reducing layout shifts.
+   - Image Formats: next.config.mjs specifies webp and avif formats, which are modern, efficient image formats that
+     contribute to smaller bundle sizes and faster loading.
+   - CSS: Tailwind CSS is generally efficient, but ensuring unused CSS is purged in production builds is crucial for
+     minimizing bundle size. (This is typically handled by PostCSS configuration, which is present).
+   - JavaScript: The current codebase is relatively small. As features are added, monitoring JavaScript bundle size and
+     implementing code splitting (which Next.js handles automatically for pages) will be important.
+
+
+  Potential Performance Bottlenecks
+   - Data Fetching in `getDictionary`: While getDictionary uses dynamic imports, which are efficient, if the number of
+     translation files per locale becomes very large, or if the JSON files themselves are huge, this could impact
+     server-side rendering performance.
+   - Server-Side Data Fetching: All data fetching in layout.tsx and page.tsx is server-side. While beneficial for initial
+     load and SEO, complex or slow data fetching operations could become bottlenecks. Caching strategies (e.g., Next.js's
+     built-in caching, or external caching layers) will be crucial as the application scales.
+   - Image Optimization: While configured, ensuring all images used in the application are actually optimized and served
+     through Next.js's Image component (if applicable) is vital.
+   - Third-Party Scripts: Currently, no significant third-party scripts are visible. As analytics, ads, or other
+     integrations are added, these can become major performance bottlenecks if not loaded efficiently (e.g., using
+     next/script with strategy="lazyOnload" or strategy="afterInteractive").
+
+  ---
+
+  I have completed the DEAD CODE & OPTIMIZATION ANALYSIS.
+
+
+  Now, I will proceed with the 5. MULTILINGUAL & SEO IMPLEMENTATION STATUS. This will involve documenting the current
+  internationalization setup, analyzing hreflang implementation, reviewing SEO components and structured data, checking
+  Core Web Vitals optimization efforts, and assessing accessibility implementation.### 5. MULTILINGUAL & SEO
+  IMPLEMENTATION STATUS
+
+
+  Current Internationalization Setup
+   - Approach: Custom, file-based internationalization.
+   - Locale Detection/Redirection: Handled by src/app/page.tsx, which redirects the root path (/) to the default English
+     locale (/en).
+   - Locale-specific Routing: Implemented using the [locale] dynamic segment in the App Router (src/app/[locale]/).
+   - Translation Loading: src/lib/i18n/get-dictionary.ts is responsible for loading locale-specific JSON translation
+     files (e.g., public/locales/en/homepage.json).
+   - Translation Usage: Translations are accessed in server components (e.g., src/app/[locale]/page.tsx) by awaiting the
+     getDictionary function and then accessing properties directly (e.g., dictionary.title).
+   - Supported Locales: en, fr, de, ja, ko (as indicated by the public/locales directories and the get-dictionary.ts
+     file).
+   - Missing: There is no explicit client-side language switcher component currently implemented, as the previous
+     LanguageSwitcher.tsx was removed.
+
+
+  Hreflang Implementation
+   - Current Status: hreflang alternates are generated within the generateMetadata function in
+     src/app/[locale]/layout.tsx.
+   - Structure: The alternates.languages property is used to define hreflang links for en, fr, de, ja, ko, and an
+     x-default pointing to /en.
+   - URL Pattern: The hreflang URLs are constructed using https://www.yourcompany.com/${lang}, assuming a base URL.
+   - Completeness: The implementation covers the specified locales and includes x-default, which is a good practice.
+     However, it relies on a hardcoded base URL (https://www.yourcompany.com/), which should ideally be dynamic based on
+     environment variables or a configuration.
+
+
+  SEO Components and Structured Data
+   - `SEOHead.tsx`: A component src/components/SEO/SEOHead.tsx exists, but its current role is unclear given that
+     generateMetadata and inline JSON-LD are used in layout.tsx. It might be redundant or intended for more granular SEO
+     control on specific pages.
+   - Structured Data:
+       - Organization Schema: Inline JSON-LD for Organization is present in src/app/[locale]/layout.tsx, including name,
+         url, logo, and sameAs properties.
+       - WebSite Schema: Inline JSON-LD for WebSite is also present in src/app/[locale]/layout.tsx, including url and
+         potentialAction for search.
+       - Missing: The roadmap mentions Report or Article schema, BreadcrumbList schema, and FAQPage schema. These are not
+         yet implemented in the current codebase.
+   - Sitemap: src/app/sitemap.xml.ts is present for dynamic sitemap generation, which is crucial for SEO.
+   - Robots.txt: Not explicitly present in the provided file list. A public/robots.txt file is essential for controlling
+     crawler access.
+
+
+  Core Web Vitals Optimization Efforts
+   - Image Optimization: next.config.mjs is configured to use webp and avif image formats and allows specific image
+     domains, indicating an effort towards efficient image delivery.
+   - Compression: next.config.mjs has compress: true.
+   - Font Optimization: next/font/google is used for Geist and Geist_Mono fonts, which optimizes font loading and reduces
+     layout shifts.
+   - Lighthouse CI: lighthouserc.js is present, indicating an intention to integrate Lighthouse for continuous
+     performance monitoring and auditing.
+   - Lazy Loading: Not explicitly observed in the provided code snippets, but Next.js handles some lazy loading
+     automatically. Manual lazy loading for images and components below the fold would be a future optimization.
+   - Minification/Bundling: Handled automatically by Next.js for production builds.
+
+
+  Accessibility Implementation
+   - Semantic HTML: The use of <html>, <body>, <header>, <main>, <footer> tags indicates a basic adherence to semantic
+     HTML.
+   - Font Classes: antialiased class is applied to the <body>, which can improve text readability.
+   - Missing: No explicit ARIA attributes, keyboard navigation considerations, or other advanced accessibility features
+     are immediately apparent in the provided code. A full accessibility audit would be required to assess compliance
+     with WCAG guidelines.
+
+  ---
+
+  I have completed the MULTILINGUAL & SEO IMPLEMENTATION STATUS.
+
+
+  Now, I will proceed with the 6. ROADMAP PROGRESS ASSESSMENT. This will involve evaluating completed phases, current
+  implementation vs. strategic goals, missing critical features, and technical debt based on the provided roadmap
+  documents.### 6. ROADMAP PROGRESS ASSESSMENT
+
+
+  Based on the roadmap.md and Strategic Roadmap for Next.txt documents, here's an assessment of the project's progress:
+
+  Which Roadmap Phases Have Been Completed
+  The project is primarily in the very early stages of Phase 2: New Codebase Development, with some foundational
+  elements of Phase 1: Discovery & Planning having been implicitly addressed through the initial setup and
+  problem-solving.
+
+
+   - Phase 1: Discovery & Planning:
+       - Detailed Audit of Existing Websites: The roadmap documents themselves serve as a detailed audit, outlining the
+         issues with fiormarkets.com and thebrainyinsights.com.
+       - Comprehensive Competitive Analysis: mordorintelligence.com has been analyzed as a benchmark, and its strategies
+         (e.g., subdirectories for i18n) are noted.
+       - Finalize Technical Architecture & Select Optimal Technology Stack: Next.js 15.3.5 with App Router, TypeScript,
+         and Tailwind CSS has been selected and implemented. A custom i18n solution is in place.
+       - Develop Detailed Multilingual Strategy Plan: A subdirectory URL structure is implicitly adopted through the
+         [locale] routing, and hreflang generation is implemented. However, the full "plan" (e.g., content translation
+         workflows, specific language considerations) is still largely theoretical within the documents.
+       - Execute Comprehensive Keyword Research: Not yet implemented in the codebase; this is a content/SEO task.
+       - Define Clear KPIs: Not explicitly defined in the codebase, but mentioned as a goal in the roadmap.
+
+
+   - Phase 2: New Codebase Development:
+       - Develop Core Architecture: The basic Next.js App Router structure, layouts, and pages are set up.
+       - Implement SEO-First Features:
+           - Canonicalization: Not explicitly implemented beyond the hreflang alternates in generateMetadata.
+           - Comprehensive Schema Markup: Basic Organization and WebSite schema are present, but Report, Article,
+             BreadcrumbList, and FAQPage schema are missing.
+           - Optimized Internal Linking Structure: Not yet implemented beyond basic navigation.
+       - Develop Multilingual Framework: A custom framework is in place, handling locale routing and translation loading.
+         hreflang generation is implemented.
+       - Formulate Content Migration Strategy & Begin Initial Content Population: Initial content (homepage translations)
+         is populated, but a full migration strategy is not yet evident in the codebase.
+       - Conduct Rigorous Testing: Testing dependencies are in package.json, and lighthouserc.js exists, but
+         comprehensive test reports are not yet generated or integrated into a CI/CD pipeline.
+
+
+  Current Implementation vs. Strategic Goals
+   - SEO-First Architecture: The foundation is laid with App Router, performance-focused next.config.mjs, and
+     generateMetadata. However, many specific SEO features (e.g., comprehensive schema, advanced internal linking,
+     robots.txt) are still to be implemented.
+   - Comprehensive Multilingual Support: The custom i18n solution provides basic locale routing and translation loading.
+     hreflang is implemented. However, the full scope of multilingual support (e.g., client-side language switching,
+     robust content localization workflows, specific SEO considerations for each language like Baidu/Naver optimization)
+     is far from complete.
+   - Performance-First: Initial steps like image formats and font optimization are taken, and Lighthouse CI is
+     configured. Continuous monitoring and optimization are still needed.
+   - Scalability & Maintainability: The modular structure of the App Router and component organization supports
+     scalability. The custom i18n solution, while functional, might need refinement for very large-scale content.
+   - Test-Driven: Testing tools are present, but a robust test suite and CI/CD integration are not yet fully realized.
+
+
+  Missing Critical Features or Components
+   - Comprehensive Schema Markup: Report, Article, BreadcrumbList, FAQPage schema are critical for market research
+     websites and are currently missing.
+   - `robots.txt`: Essential for crawl control and not present.
+   - XML Sitemap Completeness: While sitemap.xml.ts exists, its full implementation for all content types (especially
+     dynamic reports) needs verification.
+   - Client-Side Language Switcher: Removed during the refactoring, this is a crucial UX component for multilingual
+     sites.
+   - Advanced Internal Linking: No explicit strategy or components for managing internal links beyond basic navigation.
+   - Content Management System (CMS) Integration: The current setup relies on local JSON files. A robust CMS is crucial
+     for managing large volumes of multilingual content as per the roadmap.
+   - Error Pages (404, 500): Not explicitly observed, but essential for user experience and SEO.
+   - Analytics & Monitoring Integration: While Vercel Analytics is a dependency, full integration with Google Analytics
+     4, Google Search Console, etc., is not yet evident.
+   - Testing Integration: Automated testing (unit, E2E, performance) needs to be fully integrated into the development
+     workflow and CI/CD.
+   - Content Localization Workflows: The codebase doesn't reflect the complex workflows for translation, transcreation,
+     and cultural adaptation outlined in the roadmap.
+
+
+  Technical Debt and Areas Needing Refactoring
+   - Custom i18n Scalability: While the custom i18n solution works for basic cases, its scalability for a very large
+     number of translation files or complex translation keys might become a concern. The get-dictionary.ts directly
+     imports each JSON file, which could become unwieldy.
+   - Hardcoded URLs in `generateMetadata`: The https://www.yourcompany.com/ base URL for hreflang and canonical should be
+     dynamic (e.g., from environment variables) to support different environments (development, staging, production).
+   - `SEOHead.tsx` Redundancy: The purpose and usage of SEOHead.tsx should be clarified. If its functionality is fully
+     covered by generateMetadata and inline JSON-LD, it should be removed to avoid confusion and potential redundancy.
+   - Empty Directories: src/hooks and src/testing are empty. While not technical debt, they indicate incomplete features
+     or patterns.
+
+  ---
+
+
+  I have completed the ROADMAP PROGRESS ASSESSMENT.
+
+
+  Now, I will proceed with the final section: 7. NEXT STEPS & RECOMMENDATIONS. This will include a prioritized list of
+  immediate actions, missing components, optimization opportunities, and alignment with SEO-first and performance-first
+  principles.### 7. NEXT STEPS & RECOMMENDATIONS
+
+
+  Prioritized List of Immediate Actions Needed (1-2 weeks)
+
+
+   1. Implement `robots.txt`: Create a public/robots.txt file to control crawler access and ensure proper indexing. Start
+      with a basic configuration that allows all crawling and then refine as needed.
+   2. Dynamic Base URL for Metadata: Update src/app/[locale]/layout.tsx to use an environment variable (e.g.,
+      process.env.NEXT_PUBLIC_BASE_URL) for the base URL in generateMetadata (for canonical and hreflang links) instead of
+      hardcoding https://www.yourcompany.com/.
+   3. Verify `sitemap.xml.ts` Implementation: Ensure src/app/sitemap.xml.ts correctly generates all necessary URLs,
+      especially for dynamic reports ([slug]), and includes hreflang entries within the sitemap.
+   4. Review `SEOHead.tsx`: Determine if src/components/SEO/SEOHead.tsx is still necessary. If its functionality is fully
+      covered by generateMetadata and inline JSON-LD in layout.tsx, remove it to simplify the codebase.
+   5. Add Basic Error Pages: Implement custom 404 and 500 error pages (src/app/not-found.tsx, src/app/error.tsx) for
+      better user experience and SEO.
+   6. Integrate Basic Analytics: Ensure @vercel/analytics is correctly configured and sending data. Plan for Google
+      Analytics 4 integration.
+
+
+  Missing Components That Need to Be Built (1-2 months)
+
+
+   1. Comprehensive Structured Data:
+       - Implement Report or Article schema for market research reports.
+       - Implement BreadcrumbList schema for improved navigation display in SERPs.
+       - Implement FAQPage schema for relevant FAQ sections.
+       - Consider moving structured data generation into src/lib/seo/structured-data.ts for reusability and
+         maintainability.
+   2. Client-Side Language Switcher: Re-implement a functional language switcher component that allows users to change
+      locales. This will require careful consideration of how to manage client-side routing without next-intl's built-in
+      features.
+   3. Robust Internal Linking Strategy: Develop components or utilities to manage and display internal links effectively,
+      distributing link equity and guiding users.
+   4. Content Management System (CMS) Integration: Begin planning and integrating with a headless CMS (e.g., Contentful)
+      to manage multilingual content, moving away from local JSON files. This is a critical step for scalability.
+   5. Testing Suite Expansion:
+       - Write unit tests for utility functions (e.g., get-dictionary.ts, structured data helpers).
+       - Implement basic end-to-end tests (using Playwright or Cypress) for core user flows (e.g., navigating to a
+         locale, viewing a report).
+       - Integrate Lighthouse CI into the CI/CD pipeline for automated performance regression testing.
+
+  Optimization Opportunities
+
+
+   1. Custom i18n Refinement: As the number of translation files grows, consider optimizing the get-dictionary.ts to load
+      multiple files more efficiently or to dynamically load only the necessary keys.
+   2. Image Optimization Best Practices: Ensure all images are served through Next.js's Image component (if not already)
+      and that priority is used for LCP images.
+   3. Code Splitting & Lazy Loading: While Next.js handles much of this automatically, review large components or
+      third-party libraries for opportunities to lazy load them.
+   4. Performance Budgets: Establish performance budgets (e.g., for JavaScript bundle size, LCP) and integrate them into
+      the CI/CD process to prevent performance regressions.
+   5. Accessibility Audit: Conduct a full accessibility audit and implement ARIA attributes, keyboard navigation, and
+      other features to ensure WCAG compliance.
+
+
+  Alignment with SEO-First and Performance-First Principles
+
+
+  The project has a strong foundation for SEO-first and performance-first principles, as evidenced by:
+   - Next.js App Router for modern routing and server components.
+   - generateMetadata for dynamic SEO metadata.
+   - Initial structured data implementation.
+   - Image format and font optimization in next.config.mjs and layout.tsx.
+   - Presence of lighthouserc.js for performance auditing.
+
+
+  To further align with these principles, the focus should be on:
+   - Proactive SEO Integration: Ensure every new feature or component is developed with SEO considerations from the
+     outset (e.g., semantic HTML, accessibility, structured data).
+   - Automated Performance Monitoring: Fully integrate Lighthouse CI and other performance tools into the CI/CD pipeline
+     to catch regressions early.
+   - Comprehensive Testing: Implement a robust testing strategy that includes SEO and performance tests, not just
+     functional tests.
+   - Content Strategy Alignment: Work closely with content teams to ensure content is optimized for target keywords, user
+     intent, and structured data, and that localization goes beyond mere translation.
+   - Continuous Optimization: Recognize that SEO and performance are ongoing efforts, requiring regular audits, updates,
+     and adaptation to algorithm changes.
+
+  ---
+
+
+  This concludes the comprehensive codebase audit and documentation report.

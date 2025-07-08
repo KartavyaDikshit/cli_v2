@@ -1,0 +1,9 @@
+{
+  "reportsIndexTitle": "市場調査レポート",
+  "reportsIndexDescription": "さまざまな業界やトレンドに関する当社の包括的な市場調査レポートをご覧ください。",
+  "report1Title": "世界の市場動向",
+  "report2Title": "ヘルスケアにおけるAI",
+  "report3Title": "Eコマースの未来",
+  "reportDetailTitle": "市場調査レポート：{slug}",
+  "reportDetailContent": "これは{slug}に関する市場調査レポートの詳細コンテンツです。"
+}
