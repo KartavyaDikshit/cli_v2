@@ -1,0 +1,1675 @@
+PS C:\Users\User\cli_v2>  npx playwright test tests/seo/sitemap-validation.test.ts
+
+Running 7 tests using 1 worker
+
+  ✓  1 tests\seo\sitemap-validation.test.ts:8:7 › Sitemap Validation › sitemap.xml should be accessible (471ms)
+  ✓  2 …sts\seo\sitemap-validation.test.ts:14:7 › Sitemap Validation › sitemap.xml should have valid XML structure and schema (323ms)  ✘  3 …sitemap-validation.test.ts:26:7 › Sitemap Validation › sitemap.xml should include expected static URLs for each locale (26ms)  ✘  4 …sts\seo\sitemap-validation.test.ts:36:7 › Sitemap Validation › sitemap.xml should include expected dynamic report URLs (57ms)  ✓  5 …on.test.ts:47:7 › Sitemap Validation › sitemap.xml URLs should have valid lastModified, changeFrequency, and priority (109ms)  ✘  6 …ts\seo\sitemap-validation.test.ts:61:7 › Sitemap Validation › sitemap.xml should not contain broken or duplicate URLs (989ms)  ✓  7 tests\seo\sitemap-validation.test.ts:79:7 › Sitemap Validation › sitemap.xml should load under 500ms (119ms)
+
+
+  1) tests\seo\sitemap-validation.test.ts:26:7 › Sitemap Validation › sitemap.xml should include expected static URLs for each locale
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "<loc>http://localhost:3000/en</loc>"
+    Received string:    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+    <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">···
+        <url>
+          <loc>https://www.yourcompany.com/en</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:29.691Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+    </urlset>"
+
+      29 |
+      30 |     locales.forEach(locale => {
+    > 31 |       expect(sitemapText).toContain(`<loc>${baseUrl}/${locale}</loc>`);
+         |                           ^
+      32 |       expect(sitemapText).toContain(`<loc>${baseUrl}/${locale}/reports</loc>`);
+      33 |     });
+      34 |   });
+        at forEach (C:\Users\User\cli_v2\tests\seo\sitemap-validation.test.ts:31:27)
+        at C:\Users\User\cli_v2\tests\seo\sitemap-validation.test.ts:30:13
+
+  2) tests\seo\sitemap-validation.test.ts:36:7 › Sitemap Validation › sitemap.xml should include expected dynamic report URLs
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "<loc>http://localhost:3000/en/reports/global-market-trends</loc>"
+    Received string:    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+    <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">···
+        <url>
+          <loc>https://www.yourcompany.com/en</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.8</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/en/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/fr/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/de/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ja/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports/global-market-trends</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/global-market-trends\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/global-market-trends\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/global-market-trends\"
+          />
+        </url>
+        <url>
+          <loc>https://www.yourcompany.com/ko/reports/ai-in-healthcare</loc>
+          <lastmod>2025-07-08T17:58:30.698Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.7</priority>·······
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"en\"
+              href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"fr\"
+              href=\"https://www.yourcompany.com/fr/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"de\"
+              href=\"https://www.yourcompany.com/de/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ja\"
+              href=\"https://www.yourcompany.com/ja/reports/ai-in-healthcare\"
+            />
+            <xhtml:link
+              rel=\"alternate\"
+              hreflang=\"ko\"
+              href=\"https://www.yourcompany.com/ko/reports/ai-in-healthcare\"
+            />
+          <xhtml:link
+            rel=\"alternate\"
+            hreflang=\"x-default\"
+            href=\"https://www.yourcompany.com/en/reports/ai-in-healthcare\"
+          />
+        </url>
+    </urlset>"
+
+      40 |     locales.forEach(locale => {
+      41 |       // These are placeholders from the sitemap generation, adjust if your dynamic data changes
+    > 42 |       expect(sitemapText).toContain(`<loc>${baseUrl}/${locale}/reports/global-market-trends</loc>`);
+         |                           ^
+      43 |       expect(sitemapText).toContain(`<loc>${baseUrl}/${locale}/reports/ai-in-healthcare</loc>`);
+      44 |     });
+      45 |   });
+        at forEach (C:\Users\User\cli_v2\tests\seo\sitemap-validation.test.ts:42:27)
+        at C:\Users\User\cli_v2\tests\seo\sitemap-validation.test.ts:40:13
+
+  3) tests\seo\sitemap-validation.test.ts:61:7 › Sitemap Validation › sitemap.xml should not contain broken or duplicate URLs
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 400
+    Received:   405
+
+      73 |     for (const loc of locs!) {
+      74 |       const urlResponse = await request.head(loc, { failOnStatusCode: false });
+    > 75 |       expect(urlResponse.status()).toBeLessThan(400); // Expect 2xx or 3xx status codes
+         |                                    ^
+      76 |     }
+      77 |   });
+      78 |
+        at C:\Users\User\cli_v2\tests\seo\sitemap-validation.test.ts:75:36
+
+  3 failed
+    tests\seo\sitemap-validation.test.ts:26:7 › Sitemap Validation › sitemap.xml should include expected static URLs for each locale
+    tests\seo\sitemap-validation.test.ts:36:7 › Sitemap Validation › sitemap.xml should include expected dynamic report URLs
+    tests\seo\sitemap-validation.test.ts:61:7 › Sitemap Validation › sitemap.xml should not contain broken or duplicate URLs
+  4 passed (6.3s)
+PS C:\Users\User\cli_v2>  npx playwright test tests/seo/robots-validation.test.ts
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests\seo\robots-validation.test.ts:7:7 › Robots.txt Validation › robots.txt should be accessible (502ms)
+  ✓  2 tests\seo\robots-validation.test.ts:13:7 › Robots.txt Validation › robots.txt should have proper syntax and directives (26ms)
+  ✘  3 …eo\robots-validation.test.ts:24:7 › Robots.txt Validation › robots.txt should correctly reference the sitemap.xml file (21ms)  ✓  4 tests\seo\robots-validation.test.ts:31:7 › Robots.txt Validation › robots.txt should block access to specified paths (545ms)
+
+
+  1) tests\seo\robots-validation.test.ts:24:7 › Robots.txt Validation › robots.txt should correctly reference the sitemap.xml file
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Sitemap: http://localhost:3000/sitemap.xml"
+    Received string:    "User-agent: *
+    Allow: /·
+    # Block access to specific paths
+    Disallow: /admin/
+    Disallow: /api/
+    Disallow: /private/·
+    Sitemap: https://www.yourcompany.com/sitemap.xml"
+
+      26 |     const robotsTxtContent = await response.text();
+      27 |
+    > 28 |     expect(robotsTxtContent).toContain(`Sitemap: ${baseUrl}/sitemap.xml`);
+         |                              ^
+      29 |   });
+      30 |
+      31 |   test('robots.txt should block access to specified paths', async ({ request }) => {
+        at C:\Users\User\cli_v2\tests\seo\robots-validation.test.ts:28:30
+
+  1 failed
+    tests\seo\robots-validation.test.ts:24:7 › Robots.txt Validation › robots.txt should correctly reference the sitemap.xml file
+  3 passed (3.2s)
+PS C:\Users\User\cli_v2>  npx playwright test tests/seo/structured-data-validation.test.ts
+
+Running 3 tests using 1 worker
+
+  ✘  1 …tion.test.ts:22:7 › Structured Data Validation › Homepage for each locale should have Organization and WebSite schema (666ms)  ✘  2 tests\seo\structured-data-validation.test.ts:40:7 › Structured Data Validation › Report pages should have Report schema (2.7s)  ✘  3 …d-data-validation.test.ts:57:7 › Structured Data Validation › BreadcrumbList schema should be present on report pages (776ms)
+
+  1) tests\seo\structured-data-validation.test.ts:22:7 › Structured Data Validation › Homepage for each locale should have Organization and WebSite schema
+
+    Error: expect(received).toBeDefined()
+
+    Received: undefined
+
+      26 |
+      27 |       const organizationSchema = jsonLd.find(schema => schema['@type'] === 'Organization');
+    > 28 |       expect(organizationSchema).toBeDefined();
+         |                                  ^
+      29 |       expect(organizationSchema.name).toBeDefined();
+      30 |       expect(organizationSchema.url).toBeDefined();
+      31 |
+        at C:\Users\User\cli_v2\tests\seo\structured-data-validation.test.ts:28:34
+
+    Error Context: test-results\tests-seo-structured-data--587ef-nization-and-WebSite-schema\error-context.md
+
+  2) tests\seo\structured-data-validation.test.ts:40:7 › Structured Data Validation › Report pages should have Report schema
+
+    Error: expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |       const reportSchema = jsonLd.find(schema => schema['@type'] === 'Report');
+    > 48 |       expect(reportSchema).toBeDefined();
+         |                            ^
+      49 |       expect(reportSchema.headline).toBeDefined();
+      50 |       expect(reportSchema.author).toBeDefined();
+      51 |       expect(reportSchema.datePublished).toBeDefined();
+        at C:\Users\User\cli_v2\tests\seo\structured-data-validation.test.ts:48:28
+
+    Error Context: test-results\tests-seo-structured-data--bfb0a-s-should-have-Report-schema\error-context.md
+
+  3) tests\seo\structured-data-validation.test.ts:57:7 › Structured Data Validation › BreadcrumbList schema should be present on report pages
+
+    Error: expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |       const breadcrumbSchema = jsonLd.find(schema => schema['@type'] === 'BreadcrumbList');
+    > 64 |       expect(breadcrumbSchema).toBeDefined();
+         |                                ^
+      65 |       expect(breadcrumbSchema.itemListElement).toBeDefined();
+      66 |       expect(breadcrumbSchema.itemListElement.length).toBeGreaterThan(0);
+      67 |       expect(breadcrumbSchema.itemListElement[0].name).toBeDefined();
+        at C:\Users\User\cli_v2\tests\seo\structured-data-validation.test.ts:64:32
+
+    Error Context: test-results\tests-seo-structured-data--d5317--be-present-on-report-pages\error-context.md
+
+  3 failed
+    tests\seo\structured-data-validation.test.ts:22:7 › Structured Data Validation › Homepage for each locale should have Organization and WebSite schema
+    tests\seo\structured-data-validation.test.ts:40:7 › Structured Data Validation › Report pages should have Report schema
+    tests\seo\structured-data-validation.test.ts:57:7 › Structured Data Validation › BreadcrumbList schema should be present on report pages
+PS C:\Users\User\cli_v2> npx playwright test tests/performance/baseline-metrics.test.ts
+
+Running 3 tests using 1 worker
+
+  ✓  1 …rics.test.ts:7:7 › Performance Baseline Testing › Measure Core Web Vitals and page load times for all locale homepages (4.9s)Locale: en, Load Time: 406ms
+Locale: en, LCP: 112ms
+Locale: en, CLS: [Requires dedicated measurement]
+Locale: en, FID: [Requires user interaction]
+Locale: fr, Load Time: 380ms
+Locale: fr, LCP: 72ms
+Locale: fr, CLS: [Requires dedicated measurement]
+Locale: fr, FID: [Requires user interaction]
+Locale: de, Load Time: 378ms
+Locale: de, LCP: 76ms
+Locale: de, CLS: [Requires dedicated measurement]
+Locale: de, FID: [Requires user interaction]
+Locale: ja, Load Time: 362ms
+Locale: ja, LCP: 144ms
+Locale: ja, CLS: [Requires dedicated measurement]
+Locale: ja, FID: [Requires user interaction]
+Locale: ko, Load Time: 359ms
+Locale: ko, LCP: 104ms
+Locale: ko, CLS: [Requires dedicated measurement]
+Locale: ko, FID: [Requires user interaction]
+  ✓  2 …sts\performance\baseline-metrics.test.ts:42:7 › Performance Baseline Testing › Measure sitemap.xml load time and size (209ms)Sitemap Load Time: 201ms
+Sitemap Size: 21670 bytes
+  ✓  3 …ormance\baseline-metrics.test.ts:58:7 › Performance Baseline Testing › Test mobile vs desktop performance for homepage (2.1s)Desktop Load Time (en): 450ms
+Mobile Load Time (en): 369ms
+
+  3 passed (8.4s)
+PS C:\Users\User\cli_v2>  npx playwright test tests/i18n/url-structure-validation.test.ts
+
+Running 4 tests using 1 worker
+
+  ✓  1 …8n\url-structure-validation.test.ts:7:7 › Multilingual URL Structure Validation › All locale URLs should be accessible (2.0s)  ✓  2 …s\i18n\url-structure-validation.test.ts:16:7 › Multilingual URL Structure Validation › Root URL should redirect to /en (1.0s)  ✘  3 …ture-validation.test.ts:21:7 › Multilingual URL Structure Validation › URL consistency across all locales for reports (806ms)  ✘  4 …l-structure-validation.test.ts:31:7 › Multilingual URL Structure Validation › Proper 404 handling for invalid locales (216ms)
+
+  1) tests\i18n\url-structure-validation.test.ts:21:7 › Multilingual URL Structure Validation › URL consistency across all locales for reports
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      24 |       const url = `${baseUrl}/${locale}/reports/${reportSlug}`;
+      25 |       const response = await page.goto(url);
+    > 26 |       expect(response?.ok()).toBeTruthy();
+         |                              ^
+      27 |       expect(page.url()).toBe(url);
+      28 |     }
+      29 |   });
+        at C:\Users\User\cli_v2\tests\i18n\url-structure-validation.test.ts:26:30
+
+    Error Context: test-results\tests-i18n-url-structure-v-1db61-oss-all-locales-for-reports\error-context.md
+
+  2) tests\i18n\url-structure-validation.test.ts:31:7 › Multilingual URL Structure Validation › Proper 404 handling for invalid locales
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 404
+    Received: 500
+
+      32 |     const invalidLocaleUrl = `${baseUrl}/xx`; // Assuming 'xx' is an invalid locale
+      33 |     const response = await page.goto(invalidLocaleUrl, { waitUntil: 'domcontentloaded' });
+    > 34 |     expect(response?.status()).toBe(404);
+         |                                ^
+      35 |     // You might also check for specific 404 page content if available
+      36 |     expect(await page.textContent('body')).toContain('404'); // Basic check
+      37 |   });
+        at C:\Users\User\cli_v2\tests\i18n\url-structure-validation.test.ts:34:32
+
+  2 failed
+    tests\i18n\url-structure-validation.test.ts:21:7 › Multilingual URL Structure Validation › URL consistency across all locales for reports
+    tests\i18n\url-structure-validation.test.ts:31:7 › Multilingual URL Structure Validation › Proper 404 handling for invalid locales
+  2 passed (6.3s)

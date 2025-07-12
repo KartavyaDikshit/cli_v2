@@ -1,9 +1,0 @@
-{
-  "reportsIndexTitle": "Market Research Reports",
-  "reportsIndexDescription": "Explore our comprehensive market research reports on various industries and trends.",
-  "report1Title": "Global Market Trends",
-  "report2Title": "AI in Healthcare",
-  "report3Title": "Future of E-commerce",
-  "reportDetailTitle": "Market Research Report: {slug}",
-  "reportDetailContent": "This is the detailed content for the market research report on {slug}."
-}

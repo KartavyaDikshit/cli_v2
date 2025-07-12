@@ -1,0 +1,14 @@
+{
+  "pageNotFound": "Page Not Found",
+  "backToHome": "Back to Home",
+  "siteTitle": "Global Market Research Platform",
+  "siteDescription": "Access detailed market research reports and analysis from around the world.",
+  "title": "Unlock Global Insights",
+  "subtitle": "Your one-stop platform for comprehensive market research and analysis.",
+  "callToAction": "Get Started",
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "description": "The page you are looking for does not exist.",
+    "goHome": "Go to Homepage"
+  }
+}
